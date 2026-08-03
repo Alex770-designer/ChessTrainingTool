@@ -1,0 +1,31 @@
+[Event "Test"]
+[White "Player"]
+[Black "Opponent"]
+
+1. e4 e5 
+2. Nf3 Nc6 
+3. Bc4 Bc5 
+4. c3 Nf6 
+5. d3 O-O 
+6. O-O Na5 
+7. Bb5 a6 
+8. Ba4 Nc6 
+9. Bc2 d6 
+10. d4 Ba7 
+11. h3 Re8 
+12. Bg5 h6 
+13. Bh4 g5 
+14. Bg3 Bd7 
+15. Na3 b5 
+16. Bd3 Qb8 
+17. Nc2 Nh5 
+18. Nxe5 Nxg3 
+19. Nxd7 Qd8 
+20. fxg3 Qxd7 
+21. Qh5 Kg7 
+22. Ne3 Re6 
+23. Nf5+ Kh7 
+24. e5 Kh8 
+25. Nxh6 Kg7 
+26. Rxf7+
+1-0

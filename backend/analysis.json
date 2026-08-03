@@ -1,0 +1,425 @@
+[
+    {
+        "move_number": 1,
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "move": "e4",
+        "best_move": "e2e4",
+        "loss": 13,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 1,
+        "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+        "move": "e5",
+        "best_move": "e7e6",
+        "loss": 1,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 2,
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+        "move": "Nf3",
+        "best_move": "g1f3",
+        "loss": 3,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 2,
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+        "move": "Nc6",
+        "best_move": "b8c6",
+        "loss": -7,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 3,
+        "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+        "move": "Bc4",
+        "best_move": "f1b5",
+        "loss": 17,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 3,
+        "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+        "move": "Bc5",
+        "best_move": "g8f6",
+        "loss": -26,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 4,
+        "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+        "move": "b4",
+        "best_move": "c2c3",
+        "loss": 48,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 4,
+        "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/1PB1P3/5N2/P1PP1PPP/RNBQK2R b KQkq - 0 4",
+        "move": "Bxb4",
+        "best_move": "c5b4",
+        "loss": -3,
+        "category": "GOOD",
+        "reason": "Small mistake"
+    },
+    {
+        "move_number": 5,
+        "fen": "r1bqk1nr/pppp1ppp/2n5/4p3/1bB1P3/5N2/P1PP1PPP/RNBQK2R w KQkq - 0 5",
+        "move": "c3",
+        "best_move": "c2c3",
+        "loss": -6,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 5,
+        "fen": "r1bqk1nr/pppp1ppp/2n5/4p3/1bB1P3/2P2N2/P2P1PPP/RNBQK2R b KQkq - 0 5",
+        "move": "Ba5",
+        "best_move": "b4e7",
+        "loss": -1,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 6,
+        "fen": "r1bqk1nr/pppp1ppp/2n5/b3p3/2B1P3/2P2N2/P2P1PPP/RNBQK2R w KQkq - 1 6",
+        "move": "d4",
+        "best_move": "d2d4",
+        "loss": -5,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 6,
+        "fen": "r1bqk1nr/pppp1ppp/2n5/b3p3/2BPP3/2P2N2/P4PPP/RNBQK2R b KQkq - 0 6",
+        "move": "exd4",
+        "best_move": "e5d4",
+        "loss": 7,
+        "category": "GOOD",
+        "reason": "Small mistake"
+    },
+    {
+        "move_number": 7,
+        "fen": "r1bqk1nr/pppp1ppp/2n5/b7/2BpP3/2P2N2/P4PPP/RNBQK2R w KQkq - 0 7",
+        "move": "O-O",
+        "best_move": "e1g1",
+        "loss": 5,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 7,
+        "fen": "r1bqk1nr/pppp1ppp/2n5/b7/2BpP3/2P2N2/P4PPP/RNBQ1RK1 b kq - 1 7",
+        "move": "d3",
+        "best_move": "g8f6",
+        "loss": -63,
+        "category": "INACCURACY",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 8,
+        "fen": "r1bqk1nr/pppp1ppp/2n5/b7/2B1P3/2Pp1N2/P4PPP/RNBQ1RK1 w kq - 0 8",
+        "move": "Qb3",
+        "best_move": "d1b3",
+        "loss": 4,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 8,
+        "fen": "r1bqk1nr/pppp1ppp/2n5/b7/2B1P3/1QPp1N2/P4PPP/RNB2RK1 b kq - 1 8",
+        "move": "Qf6",
+        "best_move": "d8f6",
+        "loss": 2,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 9,
+        "fen": "r1b1k1nr/pppp1ppp/2n2q2/b7/2B1P3/1QPp1N2/P4PPP/RNB2RK1 w kq - 2 9",
+        "move": "e5",
+        "best_move": "e4e5",
+        "loss": -3,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 9,
+        "fen": "r1b1k1nr/pppp1ppp/2n2q2/b3P3/2B5/1QPp1N2/P4PPP/RNB2RK1 b kq - 0 9",
+        "move": "Qg6",
+        "best_move": "f6g6",
+        "loss": 1,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 10,
+        "fen": "r1b1k1nr/pppp1ppp/2n3q1/b3P3/2B5/1QPp1N2/P4PPP/RNB2RK1 w kq - 1 10",
+        "move": "Re1",
+        "best_move": "b3d1",
+        "loss": 55,
+        "category": "INACCURACY",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 10,
+        "fen": "r1b1k1nr/pppp1ppp/2n3q1/b3P3/2B5/1QPp1N2/P4PPP/RNB1R1K1 b kq - 2 10",
+        "move": "Nge7",
+        "best_move": "g8e7",
+        "loss": 5,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 11,
+        "fen": "r1b1k2r/ppppnppp/2n3q1/b3P3/2B5/1QPp1N2/P4PPP/RNB1R1K1 w kq - 3 11",
+        "move": "Ba3",
+        "best_move": "e1e3",
+        "loss": 56,
+        "category": "INACCURACY",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 11,
+        "fen": "r1b1k2r/ppppnppp/2n3q1/b3P3/2B5/BQPp1N2/P4PPP/RN2R1K1 b kq - 4 11",
+        "move": "b5",
+        "best_move": "d7d5",
+        "loss": -135,
+        "category": "MISTAKE",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 12,
+        "fen": "r1b1k2r/p1ppnppp/2n3q1/bp2P3/2B5/BQPp1N2/P4PPP/RN2R1K1 w kq - 0 12",
+        "move": "Qxb5",
+        "best_move": "c4b5",
+        "loss": -21,
+        "category": "GOOD",
+        "reason": "Small mistake"
+    },
+    {
+        "move_number": 12,
+        "fen": "r1b1k2r/p1ppnppp/2n3q1/bQ2P3/2B5/B1Pp1N2/P4PPP/RN2R1K1 b kq - 0 12",
+        "move": "Rb8",
+        "best_move": "a8b8",
+        "loss": -3,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 13,
+        "fen": "1rb1k2r/p1ppnppp/2n3q1/bQ2P3/2B5/B1Pp1N2/P4PPP/RN2R1K1 w k - 1 13",
+        "move": "Qa4",
+        "best_move": "b5a4",
+        "loss": -4,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 13,
+        "fen": "1rb1k2r/p1ppnppp/2n3q1/b3P3/Q1B5/B1Pp1N2/P4PPP/RN2R1K1 b k - 2 13",
+        "move": "Bb6",
+        "best_move": "c8b7",
+        "loss": -54,
+        "category": "INACCURACY",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 14,
+        "fen": "1rb1k2r/p1ppnppp/1bn3q1/4P3/Q1B5/B1Pp1N2/P4PPP/RN2R1K1 w k - 3 14",
+        "move": "Nbd2",
+        "best_move": "a4d1",
+        "loss": 49,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 14,
+        "fen": "1rb1k2r/p1ppnppp/1bn3q1/4P3/Q1B5/B1Pp1N2/P2N1PPP/R3R1K1 b k - 4 14",
+        "move": "Bb7",
+        "best_move": "e8g8",
+        "loss": -91,
+        "category": "INACCURACY",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 15,
+        "fen": "1r2k2r/pbppnppp/1bn3q1/4P3/Q1B5/B1Pp1N2/P2N1PPP/R3R1K1 w k - 5 15",
+        "move": "Ne4",
+        "best_move": "d2e4",
+        "loss": 2,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 15,
+        "fen": "1r2k2r/pbppnppp/1bn3q1/4P3/Q1B1N3/B1Pp1N2/P4PPP/R3R1K1 b k - 6 15",
+        "move": "Qf5",
+        "best_move": "d3d2",
+        "loss": -189,
+        "category": "MISTAKE",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 16,
+        "fen": "1r2k2r/pbppnppp/1bn5/4Pq2/Q1B1N3/B1Pp1N2/P4PPP/R3R1K1 w k - 7 16",
+        "move": "Bxd3",
+        "best_move": "c4d3",
+        "loss": 0,
+        "category": "GOOD",
+        "reason": "Small mistake"
+    },
+    {
+        "move_number": 16,
+        "fen": "1r2k2r/pbppnppp/1bn5/4Pq2/Q3N3/B1PB1N2/P4PPP/R3R1K1 b k - 0 16",
+        "move": "Qh5",
+        "best_move": "f5e6",
+        "loss": -44,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 17,
+        "fen": "1r2k2r/pbppnppp/1bn5/4P2q/Q3N3/B1PB1N2/P4PPP/R3R1K1 w k - 1 17",
+        "move": "Nf6+",
+        "best_move": "e4g3",
+        "loss": 286,
+        "category": "MISTAKE",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 17,
+        "fen": "1r2k2r/pbppnppp/1bn2N2/4P2q/Q7/B1PB1N2/P4PPP/R3R1K1 b k - 2 17",
+        "move": "gxf6",
+        "best_move": "g7f6",
+        "loss": 8,
+        "category": "GOOD",
+        "reason": "Lost a piece"
+    },
+    {
+        "move_number": 18,
+        "fen": "1r2k2r/pbppnp1p/1bn2p2/4P2q/Q7/B1PB1N2/P4PPP/R3R1K1 w k - 0 18",
+        "move": "exf6",
+        "best_move": "e5f6",
+        "loss": 1,
+        "category": "GOOD",
+        "reason": "Small mistake"
+    },
+    {
+        "move_number": 18,
+        "fen": "1r2k2r/pbppnp1p/1bn2P2/7q/Q7/B1PB1N2/P4PPP/R3R1K1 b k - 0 18",
+        "move": "Rg8",
+        "best_move": "h8g8",
+        "loss": -4,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 19,
+        "fen": "1r2k1r1/pbppnp1p/1bn2P2/7q/Q7/B1PB1N2/P4PPP/R3R1K1 w - - 1 19",
+        "move": "Rad1",
+        "best_move": "d3e4",
+        "loss": 47,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 19,
+        "fen": "1r2k1r1/pbppnp1p/1bn2P2/7q/Q7/B1PB1N2/P4PPP/3RR1K1 b - - 2 19",
+        "move": "Qxf3",
+        "best_move": "h5h3",
+        "loss": -199,
+        "category": "MISTAKE",
+        "reason": "Lost a piece"
+    },
+    {
+        "move_number": 20,
+        "fen": "1r2k1r1/pbppnp1p/1bn2P2/8/Q7/B1PB1q2/P4PPP/3RR1K1 w - - 0 20",
+        "move": "Rxe7+",
+        "best_move": "e1e7",
+        "loss": -53,
+        "category": "INACCURACY",
+        "reason": "Lost a piece"
+    },
+    {
+        "move_number": 20,
+        "fen": "1r2k1r1/pbppRp1p/1bn2P2/8/Q7/B1PB1q2/P4PPP/3R2K1 b - - 0 20",
+        "move": "Nxe7",
+        "best_move": "e8d8",
+        "loss": -9607,
+        "category": "BLUNDER",
+        "reason": "Lost a piece"
+    },
+    {
+        "move_number": 21,
+        "fen": "1r2k1r1/pbppnp1p/1b3P2/8/Q7/B1PB1q2/P4PPP/3R2K1 w - - 0 21",
+        "move": "Qxd7+",
+        "best_move": "a4d7",
+        "loss": -1,
+        "category": "GOOD",
+        "reason": "Small mistake"
+    },
+    {
+        "move_number": 21,
+        "fen": "1r2k1r1/pbpQnp1p/1b3P2/8/8/B1PB1q2/P4PPP/3R2K1 b - - 0 21",
+        "move": "Kxd7",
+        "best_move": "e8d7",
+        "loss": 0,
+        "category": "GOOD",
+        "reason": "Lost a piece"
+    },
+    {
+        "move_number": 22,
+        "fen": "1r4r1/pbpknp1p/1b3P2/8/8/B1PB1q2/P4PPP/3R2K1 w - - 0 22",
+        "move": "Bf5+",
+        "best_move": "d3f5",
+        "loss": -1,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 22,
+        "fen": "1r4r1/pbpknp1p/1b3P2/5B2/8/B1P2q2/P4PPP/3R2K1 b - - 1 22",
+        "move": "Ke8",
+        "best_move": "d7e8",
+        "loss": 0,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 23,
+        "fen": "1r2k1r1/pbp1np1p/1b3P2/5B2/8/B1P2q2/P4PPP/3R2K1 w - - 2 23",
+        "move": "Bd7+",
+        "best_move": "f5d7",
+        "loss": -1,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 23,
+        "fen": "1r2k1r1/pbpBnp1p/1b3P2/8/8/B1P2q2/P4PPP/3R2K1 b - - 3 23",
+        "move": "Kf8",
+        "best_move": "e8f8",
+        "loss": 0,
+        "category": "GOOD",
+        "reason": "No material loss"
+    },
+    {
+        "move_number": 24,
+        "fen": "1r3kr1/pbpBnp1p/1b3P2/8/8/B1P2q2/P4PPP/3R2K1 w - - 4 24",
+        "move": "Bxe7#",
+        "best_move": "a3e7",
+        "loss": -1,
+        "category": "GOOD",
+        "reason": "Lost a piece"
+    }
+]

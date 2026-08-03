@@ -1,0 +1,32 @@
+[
+    {
+        "fen": "r1b1k2r/ppppnppp/2n3q1/b3P3/2B5/BQPp1N2/P4PPP/RN2R1K1 b kq - 4 11",
+        "solution": "d7d5",
+        "category": "MISTAKE",
+        "reason": "No material loss"
+    },
+    {
+        "fen": "1r2k2r/pbppnppp/1bn3q1/4P3/Q1B1N3/B1Pp1N2/P4PPP/R3R1K1 b k - 6 15",
+        "solution": "d3d2",
+        "category": "MISTAKE",
+        "reason": "No material loss"
+    },
+    {
+        "fen": "1r2k2r/pbppnppp/1bn5/4P2q/Q3N3/B1PB1N2/P4PPP/R3R1K1 w k - 1 17",
+        "solution": "e4g3",
+        "category": "MISTAKE",
+        "reason": "No material loss"
+    },
+    {
+        "fen": "1r2k1r1/pbppnp1p/1bn2P2/7q/Q7/B1PB1N2/P4PPP/3RR1K1 b - - 2 19",
+        "solution": "h5h3",
+        "category": "MISTAKE",
+        "reason": "Lost a piece"
+    },
+    {
+        "fen": "1r2k1r1/pbppRp1p/1bn2P2/8/Q7/B1PB1q2/P4PPP/3R2K1 b - - 0 20",
+        "solution": "e8d8",
+        "category": "BLUNDER",
+        "reason": "Lost a piece"
+    }
+]
