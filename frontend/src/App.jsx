@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Upload from "./pages/Upload";
 import PuzzleTrainer from "./pages/App";
+import Analysis from "./pages/Analysis";
 
 export default function App() {
 
@@ -18,6 +19,13 @@ export default function App() {
         </button>
 
         <button
+          onClick={() => setPage("analysis")}
+          style={{ marginRight: "10px" }}
+        >
+          Analysis Report
+        </button>
+
+        <button
           onClick={() => setPage("puzzles")}
         >
           Puzzle Trainer
@@ -28,6 +36,8 @@ export default function App() {
       {page === "upload" && <Upload />}
 
       {page === "puzzles" && <PuzzleTrainer />}
+
+      {page === "analysis" && <Analysis />}
 
     </div>
   );

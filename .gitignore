@@ -10,3 +10,7 @@ node_modules/
 
 # Stockfish engine
 backend/stockfish/
+
+backend/analysis.json
+
+backend/puzzles.json

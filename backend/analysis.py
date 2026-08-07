@@ -11,9 +11,13 @@ class ChessAnalysis:
         score = info["score"].white().score(mate_score = 10000)
         return score
 
-    def best_move(self, board):
-        info = self.engine.analyse(board, chess.engine.Limit(depth=15))
-        return info["pv"][0]
+    def best_line(self, board, length=6):
+        info = self.engine.analyse(
+            board,
+            chess.engine.Limit(depth=15)
+        )
+
+        return info["pv"][:length]
 
     def close(self):
         self.engine.quit()

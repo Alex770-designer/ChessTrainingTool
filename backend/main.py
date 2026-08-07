@@ -27,7 +27,7 @@ def analyze_pgn(pgn_text):
 
         beforePos = analysis.evaluate_position(board)
 
-        best = analysis.best_move(board)
+        best_line = analysis.best_line(board)
 
         temp_board = board.copy()
         temp_board.push(move)
@@ -62,7 +62,7 @@ def analyze_pgn(pgn_text):
             "move_number": board.fullmove_number,
             "fen": board.fen(),
             "move": board.san(move),
-            "best_move": str(best),
+            "best_line": [str(move) for move in best_line],
             "loss": loss,
             "category": category,
             "reason": reason
@@ -80,3 +80,12 @@ def analyze_pgn(pgn_text):
 
 
     return results
+
+if __name__ == "__main__":
+
+    with open("games/sample.pgn") as file:
+        pgn = file.read()
+
+    result = analyze_pgn(pgn)
+
+    print(f"Analyzed {len(result)} moves")

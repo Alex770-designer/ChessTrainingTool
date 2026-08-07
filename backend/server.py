@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from flask_cors import CORS
 import json
 import random
@@ -10,6 +10,7 @@ from puzzle_generator import generate_puzzles
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PUZZLES_PATH = os.path.join(BASE_DIR, "puzzles.json")
+ANALYSIS_PATH = os.path.join(BASE_DIR, "analysis.json")
 
 app = Flask(__name__)
 
@@ -59,12 +60,20 @@ def upload_game():
 @app.route("/puzzles")
 def get_puzzles():
 
-    with open("puzzles.json") as file:
+    with open(PUZZLES_PATH, "r") as file:
         puzzles = json.load(file)
 
     return {
         "puzzles": puzzles
     }
+
+@app.route("/analysis")
+def get_analysis():
+
+    with open(ANALYSIS_PATH, "r") as file:
+        analysis = json.load(file)
+
+    return jsonify(analysis)
 
 if __name__ == "__main__":
     app.run(debug=True)

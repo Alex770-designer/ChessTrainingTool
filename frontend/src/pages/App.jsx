@@ -7,10 +7,12 @@ import PuzzleInfo from "../components/PuzzleInfo";
 export default function App() {
   const [game, setGame] = useState(null);
   const [message, setMessage] = useState("");
-  const [solution, setSolution] = useState("");
+  const [solution, setSolution] = useState([]);
+  const [currentMove, setCurrentMove] = useState(0);
   const [solved, setSolved] = useState(false);
   const [category, setCategory] = useState("");
   const [reason, setReason] = useState("");
+  const [orientation, setOrientation] = useState("white");
 
   async function loadPuzzle() {
     const response = await fetch("http://127.0.0.1:5000/puzzles");
@@ -25,19 +27,43 @@ export default function App() {
 
     console.log("Selected puzzle:", randomPuzzle);
 
-    setGame(new Chess(randomPuzzle.fen));
+    const newGame = new Chess(randomPuzzle.fen);
+
+    setGame(newGame);
+
+    const turn = randomPuzzle.fen.split(" ")[1];
+
+    setOrientation(turn === "w" ? "white" : "black");
+    console.log("Turn:", turn);
+    console.log("Orientation:", turn === "w" ? "white" : "black");
     setSolution(randomPuzzle.solution);
     setCategory(randomPuzzle.category);
     setReason(randomPuzzle.reason);
     setMessage("");
     setSolved(false);
+    setCurrentMove(0);
   }
 
   useEffect(() => {
     loadPuzzle();
   }, []);
 
+  function playOpponentMove(move, currentPosition) {
+
+    console.log("Opponent is playing:", move);
+    const gameCopy = new Chess(currentPosition.fen());
+
+    gameCopy.move({
+      from: move.substring(0, 2),
+      to: move.substring(2, 4),
+      promotion: "q",
+    });
+
+    setGame(gameCopy);
+  }
+
   function onDrop({ sourceSquare, targetSquare }) {
+
     const gameCopy = new Chess(game.fen());
 
     const moveResult = gameCopy.move({
@@ -46,22 +72,69 @@ export default function App() {
       promotion: "q",
     });
 
+
     if (!moveResult) {
       return false;
     }
 
-    console.log("Played move:", sourceSquare + targetSquare);
-    console.log("Solution:", solution);
 
-    if (sourceSquare + targetSquare === solution) {
-      setMessage("✅ Correct! Great find.");
-      setSolved(true);
-    } else {
+    const playedMove = sourceSquare + targetSquare;
+
+    console.log("Played:", playedMove);
+    console.log("Expected:", solution[currentMove]);
+
+
+    // Wrong move
+    if (playedMove !== solution[currentMove]) {
+
       setMessage("❌ Incorrect. Try again.");
       return false;
+
     }
 
+
+    // Correct player move
     setGame(gameCopy);
+
+
+    let nextMoveIndex = currentMove + 1;
+
+
+    // Puzzle finished
+    if (nextMoveIndex >= solution.length) {
+
+      setMessage("🎉 Puzzle solved!");
+      setSolved(true);
+      return true;
+
+    }
+
+
+    // Let opponent respond
+    setMessage("✅ Correct!");
+
+
+    setTimeout(() => {
+
+      const opponentMove = solution[nextMoveIndex];
+
+      playOpponentMove(opponentMove, gameCopy);
+
+
+      nextMoveIndex++;
+
+      // Move counter skips opponent move
+      setCurrentMove(nextMoveIndex);
+
+
+      if (nextMoveIndex >= solution.length) {
+        setMessage("🎉 Puzzle solved!");
+        setSolved(true);
+      }
+
+
+    }, 700);
+
 
     return true;
   }
@@ -80,6 +153,7 @@ export default function App() {
         options={{
           position: game ? game.fen() : undefined,
           onPieceDrop: onDrop,
+          boardOrientation: orientation,
         }}
       />
 

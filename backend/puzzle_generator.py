@@ -21,7 +21,8 @@ def generate_puzzles():
 
             puzzles.append({
                 "fen": move["fen"],
-                "solution": move["best_move"],
+                "solution": move["best_line"],
+                "player_color": "white" if " w " in move["fen"] else "black",
                 "category": move["category"],
                 "reason": move["reason"]
             })
@@ -32,3 +33,9 @@ def generate_puzzles():
 
 
     return puzzles
+
+if __name__ == "__main__":
+
+    puzzles = generate_puzzles()
+
+    print(f"Generated {len(puzzles)} puzzles!")
