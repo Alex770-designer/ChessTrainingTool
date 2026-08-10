@@ -2,6 +2,7 @@ import { useState } from "react";
 import Upload from "./pages/Upload";
 import PuzzleTrainer from "./pages/App";
 import Analysis from "./pages/Analysis";
+import MoveList from "./pages/MoveList";
 
 export default function App() {
 
@@ -26,6 +27,13 @@ export default function App() {
         </button>
 
         <button
+          onClick={() => setPage("movelist")}
+          style={{ marginRight: "10px" }}
+        >
+          Move List
+        </button>
+
+        <button
           onClick={() => setPage("puzzles")}
         >
           Puzzle Trainer
@@ -38,6 +46,8 @@ export default function App() {
       {page === "puzzles" && <PuzzleTrainer />}
 
       {page === "analysis" && <Analysis />}
+
+      {page === "movelist" && <MoveList />}
 
     </div>
   );

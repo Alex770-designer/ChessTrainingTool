@@ -2,7 +2,8 @@
     {
         "move_number": 1,
         "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-        "move": "e3",
+        "move": "d4",
+        "best_move": "e4",
         "best_line": [
             "e2e4",
             "c7c5",
@@ -11,1743 +12,1202 @@
             "d2d4",
             "c5d4"
         ],
-        "loss": 33,
+        "before_evaluation": 49,
+        "after_evaluation": 34,
+        "loss": 15,
         "category": "GOOD",
-        "reason": "No material loss"
+        "reason": "This move was slightly less accurate than the best option."
     },
     {
         "move_number": 1,
-        "fen": "rnbqkbnr/pppppppp/8/8/8/4P3/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-        "move": "e6",
+        "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+        "move": "d5",
+        "best_move": "Nf6",
         "best_line": [
-            "g7g6",
-            "d2d4",
             "g8f6",
-            "g1f3",
-            "f8g7",
-            "f1e2"
-        ],
-        "loss": 2,
-        "category": "GOOD",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 2,
-        "fen": "rnbqkbnr/pppp1ppp/4p3/8/8/4P3/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-        "move": "Qh5",
-        "best_line": [
-            "g1f3",
-            "g8f6",
-            "d2d4",
-            "d7d5",
             "c2c4",
-            "f8e7"
-        ],
-        "loss": 65,
-        "category": "INACCURACY",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 2,
-        "fen": "rnbqkbnr/pppp1ppp/4p3/7Q/8/4P3/PPPP1PPP/RNB1KBNR b KQkq - 1 2",
-        "move": "Qg5",
-        "best_line": [
-            "g8f6",
-            "h5d1",
-            "d7d5",
-            "d2d4",
-            "c7c5",
-            "g1f3"
-        ],
-        "loss": -668,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 3,
-        "fen": "rnb1kbnr/pppp1ppp/4p3/6qQ/8/4P3/PPPP1PPP/RNB1KBNR w KQkq - 2 3",
-        "move": "Qxh7",
-        "best_line": [
-            "h5g5",
-            "g8e7",
-            "a2a3",
-            "e7f5",
-            "g5h5",
-            "g7g6"
-        ],
-        "loss": 1250,
-        "category": "BLUNDER",
-        "reason": "Small mistake"
-    },
-    {
-        "move_number": 3,
-        "fen": "rnb1kbnr/pppp1ppQ/4p3/6q1/8/4P3/PPPP1PPP/RNB1KBNR b KQkq - 0 3",
-        "move": "Nf6",
-        "best_line": [
-            "h8h7",
+            "e7e6",
             "g1f3",
-            "g5e7",
-            "h2h4",
-            "h7h8",
-            "b1c3"
-        ],
-        "loss": -1007,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 4,
-        "fen": "rnb1kb1r/pppp1ppQ/4pn2/6q1/8/4P3/PPPP1PPP/RNB1KBNR w KQkq - 1 4",
-        "move": "Ke2",
-        "best_line": [
-            "h7h8",
-            "b8c6",
-            "h8h3",
             "d7d5",
-            "f2f3",
-            "f8d6"
+            "c1g5"
         ],
-        "loss": 1059,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 4,
-        "fen": "rnb1kb1r/pppp1ppQ/4pn2/6q1/8/4P3/PPPPKPPP/RNB2BNR b kq - 2 4",
-        "move": "Ne4",
-        "best_line": [
-            "f6h7",
-            "b1c3",
-            "g5e7",
-            "g1f3",
-            "c7c6",
-            "d2d4"
-        ],
-        "loss": -1037,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 5,
-        "fen": "rnb1kb1r/pppp1ppQ/4p3/6q1/4n3/4P3/PPPPKPPP/RNB2BNR w kq - 3 5",
-        "move": "Kf3",
-        "best_line": [
-            "h7h8",
-            "b8c6",
-            "e2e1",
-            "g5a5",
-            "f2f3",
-            "e4f6"
-        ],
-        "loss": 1083,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 5,
-        "fen": "rnb1kb1r/pppp1ppQ/4p3/6q1/4n3/4PK2/PPPP1PPP/RNB2BNR b kq - 4 5",
-        "move": "Qxg2+",
-        "best_line": [
-            "h8h7",
-            "f3e2",
-            "d7d5",
-            "b1c3",
-            "b8c6",
-            "g1f3"
-        ],
-        "loss": -691,
-        "category": "BLUNDER",
-        "reason": "Small mistake"
-    },
-    {
-        "move_number": 6,
-        "fen": "rnb1kb1r/pppp1ppQ/4p3/8/4n3/4PK2/PPPP1PqP/RNB2BNR w kq - 0 6",
-        "move": "Kf4",
-        "best_line": [
-            "f1g2",
-            "e4g5",
-            "f3e2",
-            "g5h7",
-            "b2b3",
-            "e6e5"
-        ],
-        "loss": 9979,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 6,
-        "fen": "rnb1kb1r/pppp1ppQ/4p3/8/4nK2/4P3/PPPP1PqP/RNB2BNR b kq - 1 6",
-        "move": "Be7",
-        "best_line": [
-            "f8d6"
-        ],
-        "loss": -10625,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 7,
-        "fen": "rnb1k2r/ppppbppQ/4p3/8/4nK2/4P3/PPPP1PqP/RNB2BNR w kq - 2 7",
-        "move": "Qh3",
-        "best_line": [
-            "h7h8",
-            "e7f8",
-            "f1g2",
-            "e4f2",
-            "b1c3",
-            "d7d5"
-        ],
-        "loss": 10613,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 7,
-        "fen": "rnb1k2r/ppppbpp1/4p3/8/4nK2/4P2Q/PPPP1PqP/RNB2BNR b kq - 3 7",
-        "move": "Qg6",
-        "best_line": [
-            "e7d6"
-        ],
-        "loss": -9604,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 8,
-        "fen": "rnb1k2r/ppppbpp1/4p1q1/8/4nK2/4P2Q/PPPP1P1P/RNB2BNR w kq - 4 8",
-        "move": "Qg2",
-        "best_line": [
-            "h3h8",
-            "e7f8",
-            "f1h3",
-            "e4g5",
-            "h3g4",
-            "g6e4"
-        ],
-        "loss": 9571,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 8,
-        "fen": "rnb1k2r/ppppbpp1/4p1q1/8/4nK2/4P3/PPPP1PQP/RNB2BNR b kq - 5 8",
-        "move": "Qf6+",
-        "best_line": [
-            "g6f5"
-        ],
+        "before_evaluation": 33,
+        "after_evaluation": 26,
         "loss": -7,
         "category": "GOOD",
-        "reason": "No material loss"
+        "reason": "This move was slightly less accurate than the best option."
     },
     {
-        "move_number": 9,
-        "fen": "rnb1k2r/ppppbpp1/4pq2/8/4nK2/4P3/PPPP1PQP/RNB2BNR w kq - 6 9",
-        "move": "Kg4",
+        "move_number": 2,
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+        "move": "c4",
+        "best_move": "c4",
         "best_line": [
-            "f4e4",
-            "f6f5",
-            "e4d4",
-            "f5c2",
-            "f1d3",
-            "e7f6"
+            "c2c4",
+            "e7e6",
+            "b1c3",
+            "g8f6",
+            "c4d5",
+            "e6d5"
         ],
-        "loss": 7,
+        "before_evaluation": 32,
+        "after_evaluation": 30,
+        "loss": 2,
         "category": "GOOD",
-        "reason": "No material loss"
+        "reason": "This move was slightly less accurate than the best option."
     },
     {
-        "move_number": 9,
-        "fen": "rnb1k2r/ppppbpp1/4pq2/8/4n1K1/4P3/PPPP1PQP/RNB2BNR b kq - 7 9",
-        "move": "Qd4",
+        "move_number": 2,
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+        "move": "c6",
+        "best_move": "e6",
         "best_line": [
-            "f6f5"
+            "e7e6",
+            "g1f3",
+            "g8f6",
+            "b1c3",
+            "c7c5",
+            "c4d5"
         ],
-        "loss": -10438,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 10,
-        "fen": "rnb1k2r/ppppbpp1/4p3/8/3qn1K1/4P3/PPPP1PQP/RNB2BNR w kq - 8 10",
-        "move": "c3",
-        "best_line": [
-            "e3d4",
-            "b8c6",
-            "g4f3",
-            "c6d4",
-            "f3e4",
-            "e6e5"
-        ],
-        "loss": 10425,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 10,
-        "fen": "rnb1k2r/ppppbpp1/4p3/8/3qn1K1/2P1P3/PP1P1PQP/RNB2BNR b kq - 0 10",
-        "move": "Qd3",
-        "best_line": [
-            "d4d5",
-            "g4f3",
-            "e4c3",
-            "f3g3",
-            "e7h4",
-            "g3h3"
-        ],
-        "loss": -10482,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 11,
-        "fen": "rnb1k2r/ppppbpp1/4p3/8/4n1K1/2PqP3/PP1P1PQP/RNB2BNR w kq - 1 11",
-        "move": "Be2",
-        "best_line": [
-            "f1d3",
-            "d7d5",
-            "g4f3",
-            "e7h4",
-            "d3e4",
-            "d5e4"
-        ],
-        "loss": 10480,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 11,
-        "fen": "rnb1k2r/ppppbpp1/4p3/8/4n1K1/2PqP3/PP1PBPQP/RNB3NR b kq - 2 11",
-        "move": "Qxb1",
-        "best_line": [
-            "d3d5",
-            "g2e4",
-            "d5e4",
-            "g4g3",
-            "e7h4",
-            "g3h3"
-        ],
-        "loss": -9995,
-        "category": "BLUNDER",
-        "reason": "Lost a piece"
-    },
-    {
-        "move_number": 12,
-        "fen": "rnb1k2r/ppppbpp1/4p3/8/4n1K1/2P1P3/PP1PBPQP/RqB3NR w kq - 0 12",
-        "move": "Bd3",
-        "best_line": [
-            "a1b1",
-            "f7f5",
-            "g4f3",
-            "e4g5",
-            "f3g3",
-            "g5e4"
-        ],
-        "loss": 889,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 12,
-        "fen": "rnb1k2r/ppppbpp1/4p3/8/4n1K1/2PBP3/PP1P1PQP/RqB3NR b kq - 1 12",
-        "move": "Nxf2+",
-        "best_line": [
-            "b1d3",
-            "g4f3",
-            "e4g5",
-            "f3g3",
-            "e7d6",
-            "f2f4"
-        ],
-        "loss": -110,
-        "category": "MISTAKE",
-        "reason": "Small mistake"
-    },
-    {
-        "move_number": 13,
-        "fen": "rnb1k2r/ppppbpp1/4p3/8/6K1/2PBP3/PP1P1nQP/RqB3NR w kq - 0 13",
-        "move": "Kf4",
-        "best_line": [
-            "g4f3",
-            "b1d3",
-            "g2g7",
-            "d3f5",
-            "f3e2",
-            "e7f6"
-        ],
-        "loss": 265,
-        "category": "MISTAKE",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 13,
-        "fen": "rnb1k2r/ppppbpp1/4p3/8/5K2/2PBP3/PP1P1nQP/RqB3NR b kq - 1 13",
-        "move": "e5+",
-        "best_line": [
-            "b1d3",
-            "f4f3",
-            "f2h1",
-            "g2e2",
-            "d3g6",
-            "h2h3"
-        ],
-        "loss": -301,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 14,
-        "fen": "rnb1k2r/ppppbpp1/8/4p3/5K2/2PBP3/PP1P1nQP/RqB3NR w kq - 0 14",
-        "move": "Kf5",
-        "best_line": [
-            "f4f3",
-            "b1d3",
-            "g2g7",
-            "d3f5",
-            "f3g2",
-            "e7f6"
-        ],
-        "loss": 9165,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 14,
-        "fen": "rnb1k2r/ppppbpp1/8/4pK2/8/2PBP3/PP1P1nQP/RqB3NR b kq - 1 14",
-        "move": "Na6",
-        "best_line": [
-            "d7d6"
-        ],
-        "loss": -3,
-        "category": "GOOD",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 15,
-        "fen": "r1b1k2r/ppppbpp1/n7/4pK2/8/2PBP3/PP1P1nQP/RqB3NR w kq - 2 15",
-        "move": "Qxf2",
-        "best_line": [
-            "g2f2",
-            "d7d5",
-            "f5e5",
-            "e7d6",
-            "e5d4",
-            "c7c5"
-        ],
+        "before_evaluation": 33,
+        "after_evaluation": 33,
         "loss": 0,
         "category": "GOOD",
-        "reason": "Lost a piece"
+        "reason": "This move was slightly less accurate than the best option."
     },
     {
-        "move_number": 15,
-        "fen": "r1b1k2r/ppppbpp1/n7/4pK2/8/2PBP3/PP1P1Q1P/RqB3NR b kq - 0 15",
-        "move": "Qc2",
-        "best_line": [
-            "d7d5",
-            "f5e5",
-            "e7d6",
-            "e5d4",
-            "c7c5",
-            "d4d5"
-        ],
-        "loss": -10225,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 16,
-        "fen": "r1b1k2r/ppppbpp1/n7/4pK2/8/2PBP3/PPqP1Q1P/R1B3NR w kq - 1 16",
-        "move": "Kxe5",
-        "best_line": [
-            "d3c2",
-            "h8h4",
-            "f2h4",
-            "e7h4",
-            "f5g4",
-            "g7g5"
-        ],
-        "loss": 1197,
-        "category": "BLUNDER",
-        "reason": "Small mistake"
-    },
-    {
-        "move_number": 16,
-        "fen": "r1b1k2r/ppppbpp1/n7/4K3/8/2PBP3/PPqP1Q1P/R1B3NR b kq - 0 16",
-        "move": "Qa4",
-        "best_line": [
-            "c2d3",
-            "e5f4",
-            "a6c5",
-            "h2h4",
-            "d3e4",
-            "f4g3"
-        ],
-        "loss": -372,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 17,
-        "fen": "r1b1k2r/ppppbpp1/n7/4K3/q7/2PBP3/PP1P1Q1P/R1B3NR w kq - 1 17",
-        "move": "Qf4",
-        "best_line": [
-            "e3e4",
-            "a6c5",
-            "d3b1",
-            "c5e6",
-            "e5f5",
-            "a4d1"
-        ],
-        "loss": 9291,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 17,
-        "fen": "r1b1k2r/ppppbpp1/n7/4K3/q4Q2/2PBP3/PP1P3P/R1B3NR b kq - 2 17",
-        "move": "Bh4",
-        "best_line": [
-            "d7d6",
-            "e5d5",
-            "c8e6"
-        ],
-        "loss": -10015,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 18,
-        "fen": "r1b1k2r/pppp1pp1/n7/4K3/q4Q1b/2PBP3/PP1P3P/R1B3NR w kq - 3 18",
-        "move": "Qb4",
-        "best_line": [
-            "f4a4",
-            "h4f6",
-            "e5f5",
-            "h8h5",
-            "f5f4",
-            "h5h4"
-        ],
-        "loss": 10018,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 18,
-        "fen": "r1b1k2r/pppp1pp1/n7/4K3/qQ5b/2PBP3/PP1P3P/R1B3NR b kq - 4 18",
-        "move": "Qb5+",
-        "best_line": [
-            "a6b4",
-            "c3b4",
-            "a4b4",
-            "d3c4",
-            "b4c4",
-            "e3e4"
-        ],
-        "loss": -10216,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 19,
-        "fen": "r1b1k2r/pppp1pp1/n7/1q2K3/1Q5b/2PBP3/PP1P3P/R1B3NR w kq - 5 19",
-        "move": "Qc5",
-        "best_line": [
-            "b4b5",
-            "c7c6",
-            "b5c4",
-            "d7d5",
-            "c4d4",
-            "c6c5"
-        ],
-        "loss": 1696,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 19,
-        "fen": "r1b1k2r/pppp1pp1/n7/1qQ1K3/7b/2PBP3/PP1P3P/R1B3NR b kq - 6 19",
-        "move": "Qb3",
-        "best_line": [
-            "b5d3",
-            "c5b5",
-            "h8h5",
-            "e5f4",
-            "h5b5",
-            "f4f3"
-        ],
-        "loss": -9539,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 20,
-        "fen": "r1b1k2r/pppp1pp1/n7/2Q1K3/7b/1qPBP3/PP1P3P/R1B3NR w kq - 7 20",
-        "move": "Qxc7",
-        "best_line": [
-            "a2b3",
-            "a6c5",
-            "d3f5",
-            "c5b3",
-            "a1a4",
-            "b3c1"
-        ],
-        "loss": 444,
-        "category": "BLUNDER",
-        "reason": "Small mistake"
-    },
-    {
-        "move_number": 20,
-        "fen": "r1b1k2r/ppQp1pp1/n7/4K3/7b/1qPBP3/PP1P3P/R1B3NR b kq - 0 20",
-        "move": "Qa4",
-        "best_line": [
-            "b3e6",
-            "e5f4",
-            "e6f6",
-            "d3f5",
-            "a6c7",
-            "e3e4"
-        ],
-        "loss": -332,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 21,
-        "fen": "r1b1k2r/ppQp1pp1/n7/4K3/q6b/2PBP3/PP1P3P/R1B3NR w kq - 1 21",
-        "move": "Qd6",
-        "best_line": [
-            "c7c4",
-            "h4f6",
-            "e5f4",
-            "h8h4",
-            "f4g3",
-            "h4c4"
-        ],
-        "loss": 9254,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 21,
-        "fen": "r1b1k2r/pp1p1pp1/n2Q4/4K3/q6b/2PBP3/PP1P3P/R1B3NR b kq - 2 21",
-        "move": "Rf8",
-        "best_line": [
-            "h8h5",
-            "d3f5",
-            "f7f6",
-            "e5d5",
-            "h5f5",
-            "d6e5"
-        ],
-        "loss": -9631,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 22,
-        "fen": "r1b1kr2/pp1p1pp1/n2Q4/4K3/q6b/2PBP3/PP1P3P/R1B3NR w q - 3 22",
-        "move": "Qe7+",
+        "move_number": 3,
+        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+        "move": "Nc3",
+        "best_move": "Nf3",
         "best_line": [
             "g1f3",
-            "h4e7",
-            "d6d4",
-            "e7f6",
-            "e5f4",
-            "f6d4"
+            "g8f6",
+            "b1c3",
+            "d5c4",
+            "a2a4",
+            "c8f5"
         ],
-        "loss": 475,
-        "category": "BLUNDER",
-        "reason": "No material loss"
+        "before_evaluation": 39,
+        "after_evaluation": 34,
+        "loss": 5,
+        "category": "GOOD",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 3,
+        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR b KQkq - 1 3",
+        "move": "Nf6",
+        "best_move": "Nf6",
+        "best_line": [
+            "g8f6",
+            "e2e3",
+            "c8f5",
+            "g1f3",
+            "e7e6",
+            "f3h4"
+        ],
+        "before_evaluation": 37,
+        "after_evaluation": 37,
+        "loss": 0,
+        "category": "GOOD",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 4,
+        "fen": "rnbqkb1r/pp2pppp/2p2n2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+        "move": "Bf4",
+        "best_move": "Nf3",
+        "best_line": [
+            "g1f3",
+            "d5c4",
+            "a2a4",
+            "c8f5",
+            "f3e5",
+            "b8d7"
+        ],
+        "before_evaluation": 35,
+        "after_evaluation": -47,
+        "loss": 82,
+        "category": "INACCURACY",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 4,
+        "fen": "rnbqkb1r/pp2pppp/2p2n2/3p4/2PP1B2/2N5/PP2PPPP/R2QKBNR b KQkq - 3 4",
+        "move": "e6",
+        "best_move": "dxc4",
+        "best_line": [
+            "d5c4",
+            "g1f3",
+            "f6d5",
+            "d1c1",
+            "d5f4",
+            "c1f4"
+        ],
+        "before_evaluation": -55,
+        "after_evaluation": 49,
+        "loss": 104,
+        "category": "MISTAKE",
+        "reason": "This move missed a stronger opportunity."
+    },
+    {
+        "move_number": 5,
+        "fen": "rnbqkb1r/pp3ppp/2p1pn2/3p4/2PP1B2/2N5/PP2PPPP/R2QKBNR w KQkq - 0 5",
+        "move": "Nf3",
+        "best_move": "e3",
+        "best_line": [
+            "e2e3",
+            "f8d6",
+            "f4g3",
+            "e8g8",
+            "g1f3",
+            "h7h6"
+        ],
+        "before_evaluation": 43,
+        "after_evaluation": -35,
+        "loss": 78,
+        "category": "INACCURACY",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 5,
+        "fen": "rnbqkb1r/pp3ppp/2p1pn2/3p4/2PP1B2/2N2N2/PP2PPPP/R2QKB1R b KQkq - 1 5",
+        "move": "Bb4",
+        "best_move": "dxc4",
+        "best_line": [
+            "d5c4",
+            "a2a4",
+            "f8b4",
+            "g2g3",
+            "f6e4",
+            "d1c2"
+        ],
+        "before_evaluation": -48,
+        "after_evaluation": 61,
+        "loss": 109,
+        "category": "MISTAKE",
+        "reason": "This move missed a stronger opportunity."
+    },
+    {
+        "move_number": 6,
+        "fen": "rnbqk2r/pp3ppp/2p1pn2/3p4/1bPP1B2/2N2N2/PP2PPPP/R2QKB1R w KQkq - 2 6",
+        "move": "e3",
+        "best_move": "e3",
+        "best_line": [
+            "e2e3",
+            "e8g8",
+            "a1c1",
+            "b7b6",
+            "a2a3",
+            "b4c3"
+        ],
+        "before_evaluation": 62,
+        "after_evaluation": 54,
+        "loss": 8,
+        "category": "GOOD",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 6,
+        "fen": "rnbqk2r/pp3ppp/2p1pn2/3p4/1bPP1B2/2N1PN2/PP3PPP/R2QKB1R b KQkq - 0 6",
+        "move": "O-O",
+        "best_move": "c5",
+        "best_line": [
+            "c6c5",
+            "d4c5",
+            "b8d7",
+            "f1e2",
+            "b4c3",
+            "b2c3"
+        ],
+        "before_evaluation": 53,
+        "after_evaluation": 62,
+        "loss": 9,
+        "category": "GOOD",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 7,
+        "fen": "rnbq1rk1/pp3ppp/2p1pn2/3p4/1bPP1B2/2N1PN2/PP3PPP/R2QKB1R w KQ - 1 7",
+        "move": "Qb3",
+        "best_move": "Rc1",
+        "best_line": [
+            "a1c1",
+            "c6c5",
+            "d4c5",
+            "f6e4",
+            "c4d5",
+            "d8d5"
+        ],
+        "before_evaluation": 65,
+        "after_evaluation": 50,
+        "loss": 15,
+        "category": "GOOD",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 7,
+        "fen": "rnbq1rk1/pp3ppp/2p1pn2/3p4/1bPP1B2/1QN1PN2/PP3PPP/R3KB1R b KQ - 2 7",
+        "move": "Qa5",
+        "best_move": "Bd6",
+        "best_line": [
+            "b4d6",
+            "f4g3",
+            "d6g3",
+            "h2g3",
+            "b8d7",
+            "f1d3"
+        ],
+        "before_evaluation": 55,
+        "after_evaluation": 64,
+        "loss": 9,
+        "category": "GOOD",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 8,
+        "fen": "rnb2rk1/pp3ppp/2p1pn2/q2p4/1bPP1B2/1QN1PN2/PP3PPP/R3KB1R w KQ - 3 8",
+        "move": "a3",
+        "best_move": "Rc1",
+        "best_line": [
+            "a1c1",
+            "b7b6",
+            "f1d3",
+            "c8a6",
+            "e1g1",
+            "a6c4"
+        ],
+        "before_evaluation": 64,
+        "after_evaluation": 60,
+        "loss": 4,
+        "category": "GOOD",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 8,
+        "fen": "rnb2rk1/pp3ppp/2p1pn2/q2p4/1bPP1B2/PQN1PN2/1P3PPP/R3KB1R b KQ - 0 8",
+        "move": "Bxc3+",
+        "best_move": "c5",
+        "best_line": [
+            "c6c5",
+            "f4d6",
+            "f8e8",
+            "d4c5",
+            "b4c5",
+            "d6c5"
+        ],
+        "before_evaluation": 56,
+        "after_evaluation": 43,
+        "loss": -13,
+        "category": "GOOD",
+        "reason": "This move resulted in a significant material loss."
+    },
+    {
+        "move_number": 9,
+        "fen": "rnb2rk1/pp3ppp/2p1pn2/q2p4/2PP1B2/PQb1PN2/1P3PPP/R3KB1R w KQ - 0 9",
+        "move": "bxc3",
+        "best_move": "bxc3",
+        "best_line": [
+            "b2c3",
+            "d5c4",
+            "f1c4",
+            "f6d5",
+            "e1g1",
+            "d5f4"
+        ],
+        "before_evaluation": 54,
+        "after_evaluation": 46,
+        "loss": 8,
+        "category": "GOOD",
+        "reason": "This move resulted in a significant material loss."
+    },
+    {
+        "move_number": 9,
+        "fen": "rnb2rk1/pp3ppp/2p1pn2/q2p4/2PP1B2/PQP1PN2/5PPP/R3KB1R b KQ - 0 9",
+        "move": "dxc4",
+        "best_move": "dxc4",
+        "best_line": [
+            "d5c4",
+            "f1c4",
+            "f6d5",
+            "e1g1",
+            "d5f4",
+            "e3f4"
+        ],
+        "before_evaluation": 49,
+        "after_evaluation": 46,
+        "loss": -3,
+        "category": "GOOD",
+        "reason": "This move resulted in a noticeable material loss."
+    },
+    {
+        "move_number": 10,
+        "fen": "rnb2rk1/pp3ppp/2p1pn2/q7/2pP1B2/PQP1PN2/5PPP/R3KB1R w KQ - 0 10",
+        "move": "Bxc4",
+        "best_move": "Bxc4",
+        "best_line": [
+            "f1c4",
+            "f6d5",
+            "e1g1",
+            "d5f4",
+            "e3f4",
+            "a5c7"
+        ],
+        "before_evaluation": 44,
+        "after_evaluation": 50,
+        "loss": -6,
+        "category": "GOOD",
+        "reason": "This move resulted in a noticeable material loss."
+    },
+    {
+        "move_number": 10,
+        "fen": "rnb2rk1/pp3ppp/2p1pn2/q7/2BP1B2/PQP1PN2/5PPP/R3K2R b KQ - 0 10",
+        "move": "Ne4",
+        "best_move": "Nd5",
+        "best_line": [
+            "f6d5",
+            "e1g1",
+            "d5f4",
+            "e3f4",
+            "b8d7",
+            "f1e1"
+        ],
+        "before_evaluation": 41,
+        "after_evaluation": 148,
+        "loss": 107,
+        "category": "MISTAKE",
+        "reason": "This move missed a stronger opportunity."
+    },
+    {
+        "move_number": 11,
+        "fen": "rnb2rk1/pp3ppp/2p1p3/q7/2BPnB2/PQP1PN2/5PPP/R3K2R w KQ - 1 11",
+        "move": "Rc1",
+        "best_move": "Rc1",
+        "best_line": [
+            "a1c1",
+            "b7b6",
+            "c4d3",
+            "e4f6",
+            "e1g1",
+            "c8b7"
+        ],
+        "before_evaluation": 133,
+        "after_evaluation": 128,
+        "loss": 5,
+        "category": "GOOD",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 11,
+        "fen": "rnb2rk1/pp3ppp/2p1p3/q7/2BPnB2/PQP1PN2/5PPP/2R1K2R b K - 2 11",
+        "move": "g5",
+        "best_move": "b6",
+        "best_line": [
+            "b7b6",
+            "c4d3",
+            "e4f6",
+            "e1g1",
+            "c8b7",
+            "f3e5"
+        ],
+        "before_evaluation": 143,
+        "after_evaluation": 205,
+        "loss": 62,
+        "category": "INACCURACY",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 12,
+        "fen": "rnb2rk1/pp3p1p/2p1p3/q5p1/2BPnB2/PQP1PN2/5PPP/2R1K2R w K - 0 12",
+        "move": "Bg3",
+        "best_move": "Be5",
+        "best_line": [
+            "f4e5",
+            "b8d7",
+            "c4d3",
+            "a5d5",
+            "c3c4",
+            "d5a5"
+        ],
+        "before_evaluation": 214,
+        "after_evaluation": 185,
+        "loss": 29,
+        "category": "GOOD",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 12,
+        "fen": "rnb2rk1/pp3p1p/2p1p3/q5p1/2BPn3/PQP1PNB1/5PPP/2R1K2R b K - 1 12",
+        "move": "h6",
+        "best_move": "Nd7",
+        "best_line": [
+            "b8d7",
+            "c4d3",
+            "e4g3",
+            "h2g3",
+            "g5g4",
+            "f3d2"
+        ],
+        "before_evaluation": 187,
+        "after_evaluation": 196,
+        "loss": 9,
+        "category": "GOOD",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 13,
+        "fen": "rnb2rk1/pp3p2/2p1p2p/q5p1/2BPn3/PQP1PNB1/5PPP/2R1K2R w K - 0 13",
+        "move": "h4",
+        "best_move": "Be5",
+        "best_line": [
+            "g3e5",
+            "b8d7",
+            "b3c2",
+            "a5a3",
+            "e1g1",
+            "e4f6"
+        ],
+        "before_evaluation": 208,
+        "after_evaluation": 183,
+        "loss": 25,
+        "category": "GOOD",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 13,
+        "fen": "rnb2rk1/pp3p2/2p1p2p/q5p1/2BPn2P/PQP1PNB1/5PP1/2R1K2R b K - 0 13",
+        "move": "g4",
+        "best_move": "Nxg3",
+        "best_line": [
+            "e4g3",
+            "f2g3",
+            "g5g4",
+            "f3e5",
+            "b8d7",
+            "e5g4"
+        ],
+        "before_evaluation": 190,
+        "after_evaluation": 216,
+        "loss": 26,
+        "category": "GOOD",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 14,
+        "fen": "rnb2rk1/pp3p2/2p1p2p/q7/2BPn1pP/PQP1PNB1/5PP1/2R1K2R w K - 0 14",
+        "move": "Ne5",
+        "best_move": "Bf4",
+        "best_line": [
+            "g3f4",
+            "g4f3",
+            "g2f3",
+            "e4f6",
+            "f4h6",
+            "b8d7"
+        ],
+        "before_evaluation": 222,
+        "after_evaluation": 207,
+        "loss": 15,
+        "category": "GOOD",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 14,
+        "fen": "rnb2rk1/pp3p2/2p1p2p/q3N3/2BPn1pP/PQP1P1B1/5PP1/2R1K2R b K - 1 14",
+        "move": "h5",
+        "best_move": "Nxg3",
+        "best_line": [
+            "e4g3",
+            "f2g3",
+            "b8d7",
+            "e5g4",
+            "b7b5",
+            "c4d3"
+        ],
+        "before_evaluation": 190,
+        "after_evaluation": 280,
+        "loss": 90,
+        "category": "INACCURACY",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 15,
+        "fen": "rnb2rk1/pp3p2/2p1p3/q3N2p/2BPn1pP/PQP1P1B1/5PP1/2R1K2R w K - 0 15",
+        "move": "Qc2",
+        "best_move": "Bf4",
+        "best_line": [
+            "g3f4",
+            "b8d7",
+            "f2f3",
+            "e4f6",
+            "e3e4",
+            "b7b5"
+        ],
+        "before_evaluation": 285,
+        "after_evaluation": 293,
+        "loss": -8,
+        "category": "GOOD",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 15,
+        "fen": "rnb2rk1/pp3p2/2p1p3/q3N2p/2BPn1pP/P1P1P1B1/2Q2PP1/2R1K2R b K - 1 15",
+        "move": "Nxg3",
+        "best_move": "Nxg3",
+        "best_line": [
+            "e4g3",
+            "f2g3",
+            "b8d7",
+            "e5g6",
+            "a5c7",
+            "g6f4"
+        ],
+        "before_evaluation": 284,
+        "after_evaluation": 297,
+        "loss": 13,
+        "category": "GOOD",
+        "reason": "This move resulted in a significant material loss."
+    },
+    {
+        "move_number": 16,
+        "fen": "rnb2rk1/pp3p2/2p1p3/q3N2p/2BP2pP/P1P1P1n1/2Q2PP1/2R1K2R w K - 0 16",
+        "move": "fxg3",
+        "best_move": "fxg3",
+        "best_line": [
+            "f2g3",
+            "b8d7",
+            "e5g6",
+            "a5c7",
+            "g6f4",
+            "d7f6"
+        ],
+        "before_evaluation": 298,
+        "after_evaluation": 313,
+        "loss": -15,
+        "category": "GOOD",
+        "reason": "This move resulted in a significant material loss."
+    },
+    {
+        "move_number": 16,
+        "fen": "rnb2rk1/pp3p2/2p1p3/q3N2p/2BP2pP/P1P1P1P1/2Q3P1/2R1K2R b K - 0 16",
+        "move": "Qxa3",
+        "best_move": "b5",
+        "best_line": [
+            "b7b5",
+            "e1g1",
+            "b5c4",
+            "e5f7",
+            "g8g7",
+            "f7g5"
+        ],
+        "before_evaluation": 314,
+        "after_evaluation": 364,
+        "loss": 50,
+        "category": "GOOD",
+        "reason": "This move resulted in a noticeable material loss."
+    },
+    {
+        "move_number": 17,
+        "fen": "rnb2rk1/pp3p2/2p1p3/4N2p/2BP2pP/q1P1P1P1/2Q3P1/2R1K2R w K - 0 17",
+        "move": "O-O",
+        "best_move": "O-O",
+        "best_line": [
+            "e1g1",
+            "b8d7",
+            "e5f7",
+            "g8g7",
+            "c4e6",
+            "a7a5"
+        ],
+        "before_evaluation": 460,
+        "after_evaluation": 522,
+        "loss": -62,
+        "category": "INACCURACY",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 17,
+        "fen": "rnb2rk1/pp3p2/2p1p3/4N2p/2BP2pP/q1P1P1P1/2Q3P1/2R2RK1 b - - 1 17",
+        "move": "Nd7",
+        "best_move": "Qe7",
+        "best_line": [
+            "a3e7",
+            "e5g6",
+            "e7d6",
+            "g6f8",
+            "d6f8",
+            "f1f2"
+        ],
+        "before_evaluation": 513,
+        "after_evaluation": 572,
+        "loss": 59,
+        "category": "INACCURACY",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 18,
+        "fen": "r1b2rk1/pp1n1p2/2p1p3/4N2p/2BP2pP/q1P1P1P1/2Q3P1/2R2RK1 w - - 2 18",
+        "move": "Qf2",
+        "best_move": "Nxf7",
+        "best_line": [
+            "e5f7",
+            "g8g7",
+            "c4e6",
+            "a3c1",
+            "f1c1",
+            "d7f6"
+        ],
+        "before_evaluation": 575,
+        "after_evaluation": 296,
+        "loss": 279,
+        "category": "MISTAKE",
+        "reason": "This move gave the opponent a noticeable advantage."
+    },
+    {
+        "move_number": 18,
+        "fen": "r1b2rk1/pp1n1p2/2p1p3/4N2p/2BP2pP/q1P1P1P1/5QP1/2R2RK1 b - - 3 18",
+        "move": "Nxe5",
+        "best_move": "Qe7",
+        "best_line": [
+            "a3e7",
+            "f2c2",
+            "d7e5",
+            "d4e5",
+            "g8g7",
+            "f1f6"
+        ],
+        "before_evaluation": 293,
+        "after_evaluation": 369,
+        "loss": 76,
+        "category": "INACCURACY",
+        "reason": "This move resulted in a significant material loss."
+    },
+    {
+        "move_number": 19,
+        "fen": "r1b2rk1/pp3p2/2p1p3/4n2p/2BP2pP/q1P1P1P1/5QP1/2R2RK1 w - - 0 19",
+        "move": "dxe5",
+        "best_move": "dxe5",
+        "best_line": [
+            "d4e5",
+            "a3e7",
+            "f2f4",
+            "g8g7",
+            "f4e4",
+            "b7b6"
+        ],
+        "before_evaluation": 395,
+        "after_evaluation": 440,
+        "loss": -45,
+        "category": "GOOD",
+        "reason": "This move resulted in a significant material loss."
+    },
+    {
+        "move_number": 19,
+        "fen": "r1b2rk1/pp3p2/2p1p3/4P2p/2B3pP/q1P1P1P1/5QP1/2R2RK1 b - - 0 19",
+        "move": "Qe7",
+        "best_move": "Qe7",
+        "best_line": [
+            "a3e7",
+            "f2f4",
+            "g8g7",
+            "f4e4",
+            "f8h8",
+            "f1f6"
+        ],
+        "before_evaluation": 458,
+        "after_evaluation": 416,
+        "loss": -42,
+        "category": "GOOD",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 20,
+        "fen": "r1b2rk1/pp2qp2/2p1p3/4P2p/2B3pP/2P1P1P1/5QP1/2R2RK1 w - - 1 20",
+        "move": "Qf4",
+        "best_move": "Qf4",
+        "best_line": [
+            "f2f4",
+            "g8g7",
+            "f4e4",
+            "f8h8",
+            "f1f6",
+            "c8d7"
+        ],
+        "before_evaluation": 442,
+        "after_evaluation": 432,
+        "loss": 10,
+        "category": "GOOD",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 20,
+        "fen": "r1b2rk1/pp2qp2/2p1p3/4P2p/2B2QpP/2P1P1P1/6P1/2R2RK1 b - - 2 20",
+        "move": "b5",
+        "best_move": "Kg7",
+        "best_line": [
+            "g8g7",
+            "f4e4",
+            "f8h8",
+            "f1f6",
+            "a7a5",
+            "c1f1"
+        ],
+        "before_evaluation": 421,
+        "after_evaluation": 531,
+        "loss": 110,
+        "category": "MISTAKE",
+        "reason": "This move missed a stronger opportunity."
+    },
+    {
+        "move_number": 21,
+        "fen": "r1b2rk1/p3qp2/2p1p3/1p2P2p/2B2QpP/2P1P1P1/6P1/2R2RK1 w - - 0 21",
+        "move": "Bd3",
+        "best_move": "Qh6",
+        "best_line": [
+            "f4h6",
+            "f8d8",
+            "h6h5",
+            "d8d5",
+            "c4d5",
+            "e6d5"
+        ],
+        "before_evaluation": 541,
+        "after_evaluation": 367,
+        "loss": 174,
+        "category": "MISTAKE",
+        "reason": "This move gave the opponent a noticeable advantage."
+    },
+    {
+        "move_number": 21,
+        "fen": "r1b2rk1/p3qp2/2p1p3/1p2P2p/5QpP/2PBP1P1/6P1/2R2RK1 b - - 1 21",
+        "move": "f5",
+        "best_move": "Rd8",
+        "best_line": [
+            "f8d8",
+            "c1d1",
+            "c8a6",
+            "f4e4",
+            "d8d3",
+            "e4d3"
+        ],
+        "before_evaluation": 368,
+        "after_evaluation": 588,
+        "loss": 220,
+        "category": "MISTAKE",
+        "reason": "This move gave the opponent a noticeable advantage."
     },
     {
         "move_number": 22,
-        "fen": "r1b1kr2/pp1pQpp1/n7/4K3/q6b/2PBP3/PP1P3P/R1B3NR b q - 4 22",
-        "move": "Bxe7",
+        "fen": "r1b2rk1/p3q3/2p1p3/1p2Pp1p/5QpP/2PBP1P1/6P1/2R2RK1 w - f6 0 22",
+        "move": "exf6",
+        "best_move": "exf6",
         "best_line": [
-            "h4e7",
-            "b2b4",
-            "a4c6",
-            "d3a6",
-            "b7a6",
-            "e5d4"
-        ],
-        "loss": 95,
-        "category": "INACCURACY",
-        "reason": "Lost a piece"
-    },
-    {
-        "move_number": 23,
-        "fen": "r1b1kr2/pp1pbpp1/n7/4K3/q7/2PBP3/PP1P3P/R1B3NR w q - 0 23",
-        "move": "Ne2",
-        "best_line": [
-            "d3e4",
-            "a4b5",
-            "e4d5",
-            "d7d6",
-            "e5f4",
-            "b5d5"
-        ],
-        "loss": 8967,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 23,
-        "fen": "r1b1kr2/pp1pbpp1/n7/4K3/q7/2PBP3/PP1PN2P/R1B4R b q - 1 23",
-        "move": "Qe4+",
-        "best_line": [
+            "e5f6",
             "e7f6",
-            "e5d6",
-            "a4c6"
-        ],
-        "loss": -9861,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 24,
-        "fen": "r1b1kr2/pp1pbpp1/n7/4K3/4q3/2PBP3/PP1PN2P/R1B4R w q - 2 24",
-        "move": "Kxe4",
-        "best_line": [
-            "d3e4",
-            "g7g5",
-            "e4g2",
-            "d7d5",
-            "e5d4",
+            "f4f6",
+            "f8f6",
+            "f1f6",
             "c8d7"
         ],
-        "loss": 86,
-        "category": "INACCURACY",
-        "reason": "Lost a piece"
+        "before_evaluation": 601,
+        "after_evaluation": 585,
+        "loss": 16,
+        "category": "GOOD",
+        "reason": "This move resulted in a noticeable material loss."
+    },
+    {
+        "move_number": 22,
+        "fen": "r1b2rk1/p3q3/2p1pP2/1p5p/5QpP/2PBP1P1/6P1/2R2RK1 b - - 0 22",
+        "move": "Qf7",
+        "best_move": "Rxf6",
+        "best_line": [
+            "f8f6",
+            "f4f6",
+            "e7f6",
+            "f1f6",
+            "c8a6",
+            "f6e6"
+        ],
+        "before_evaluation": 593,
+        "after_evaluation": 931,
+        "loss": 338,
+        "category": "BLUNDER",
+        "reason": "This move significantly worsened the position."
+    },
+    {
+        "move_number": 23,
+        "fen": "r1b2rk1/p4q2/2p1pP2/1p5p/5QpP/2PBP1P1/6P1/2R2RK1 w - - 1 23",
+        "move": "Qg5+",
+        "best_move": "Qg5+",
+        "best_line": [
+            "f4g5",
+            "g8h8",
+            "d3g6",
+            "e6e5",
+            "c1d1",
+            "c8e6"
+        ],
+        "before_evaluation": 1028,
+        "after_evaluation": 1400,
+        "loss": -372,
+        "category": "BLUNDER",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 23,
+        "fen": "r1b2rk1/p4q2/2p1pP2/1p4Qp/6pP/2PBP1P1/6P1/2R2RK1 b - - 2 23",
+        "move": "Kh8",
+        "best_move": "Kh8",
+        "best_line": [
+            "g8h8",
+            "d3g6",
+            "e6e5",
+            "c1d1",
+            "c8e6",
+            "g5h5"
+        ],
+        "before_evaluation": 1095,
+        "after_evaluation": 1047,
+        "loss": -48,
+        "category": "GOOD",
+        "reason": "This move was slightly less accurate than the best option."
     },
     {
         "move_number": 24,
-        "fen": "r1b1kr2/pp1pbpp1/n7/8/4K3/2PBP3/PP1PN2P/R1B4R b q - 0 24",
-        "move": "Ba3",
+        "fen": "r1b2r1k/p4q2/2p1pP2/1p4Qp/6pP/2PBP1P1/6P1/2R2RK1 w - - 3 24",
+        "move": "Bg6",
+        "best_move": "Bg6",
         "best_line": [
-            "b7b6",
-            "e4f4",
-            "a6c5",
-            "d3c2",
-            "c8b7",
-            "h1g1"
+            "d3g6",
+            "e6e5",
+            "g5h5",
+            "h8g8",
+            "g6f7",
+            "f8f7"
         ],
-        "loss": -505,
+        "before_evaluation": 1095,
+        "after_evaluation": 1262,
+        "loss": -167,
+        "category": "MISTAKE",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 24,
+        "fen": "r1b2r1k/p4q2/2p1pPB1/1p4Qp/6pP/2P1P1P1/6P1/2R2RK1 b - - 4 24",
+        "move": "Qc7",
+        "best_move": "Bd7",
+        "best_line": [
+            "c8d7",
+            "g5h5",
+            "h8g8",
+            "g6f7",
+            "f8f7",
+            "c1d1"
+        ],
+        "before_evaluation": 1236,
+        "after_evaluation": 9993,
+        "loss": 8757,
         "category": "BLUNDER",
-        "reason": "No material loss"
+        "reason": "This move caused a major deterioration in the position."
     },
     {
         "move_number": 25,
-        "fen": "r1b1kr2/pp1p1pp1/n7/8/4K3/b1PBP3/PP1PN2P/R1B4R w q - 1 25",
-        "move": "Nd4",
+        "fen": "r1b2r1k/p1q5/2p1pPB1/1p4Qp/6pP/2P1P1P1/6P1/2R2RK1 w - - 5 25",
+        "move": "Qxh5+",
+        "best_move": "Qxh5+",
         "best_line": [
-            "b2a3",
-            "a6c5",
-            "e4d4",
-            "c5e6",
-            "d4c4",
-            "b7b6"
+            "g5h5",
+            "h8g8",
+            "f6f7",
+            "f8f7",
+            "g6f7",
+            "g8f8"
         ],
-        "loss": 439,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 25,
-        "fen": "r1b1kr2/pp1p1pp1/n7/8/3NK3/b1PBP3/PP1P3P/R1B4R b q - 2 25",
-        "move": "Bxb2",
-        "best_line": [
-            "a6c5",
-            "e4f3",
-            "c5d3",
-            "b2a3",
-            "b7b6",
-            "h1g1"
-        ],
-        "loss": -322,
-        "category": "BLUNDER",
-        "reason": "Small mistake"
-    },
-    {
-        "move_number": 26,
-        "fen": "r1b1kr2/pp1p1pp1/n7/8/3NK3/2PBP3/Pb1P3P/R1B4R w q - 0 26",
-        "move": "Nc6",
-        "best_line": [
-            "d3a6",
-            "b2a1",
-            "a6c4",
-            "b7b5",
-            "d4b5",
-            "a8b8"
-        ],
-        "loss": 694,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 26,
-        "fen": "r1b1kr2/pp1p1pp1/n1N5/8/4K3/2PBP3/Pb1P3P/R1B4R b q - 1 26",
-        "move": "d6",
-        "best_line": [
-            "a6c5",
-            "e4d4",
-            "b2a1",
-            "d4c5",
-            "d7c6",
-            "c1a3"
-        ],
-        "loss": -442,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 27,
-        "fen": "r1b1kr2/pp3pp1/n1Np4/8/4K3/2PBP3/Pb1P3P/R1B4R w q - 0 27",
-        "move": "Rb1",
-        "best_line": [
-            "c1b2",
-            "a6c5",
-            "e4d4",
-            "b7c6",
-            "d3c2",
-            "c5e6"
-        ],
-        "loss": 383,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 27,
-        "fen": "r1b1kr2/pp3pp1/n1Np4/8/4K3/2PBP3/Pb1P3P/1RB4R b q - 1 27",
-        "move": "Bxc3",
-        "best_line": [
-            "a6c5",
-            "e4d4",
-            "b2c1",
-            "c6b4",
-            "c1a3",
-            "b4d5"
-        ],
-        "loss": -700,
-        "category": "BLUNDER",
-        "reason": "Small mistake"
-    },
-    {
-        "move_number": 28,
-        "fen": "r1b1kr2/pp3pp1/n1Np4/8/4K3/2bBP3/P2P3P/1RB4R w q - 0 28",
-        "move": "Bf1",
-        "best_line": [
-            "d3a6",
-            "b7a6",
-            "d2c3",
-            "c8e6",
-            "h1g1",
-            "f8h8"
-        ],
-        "loss": 660,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 28,
-        "fen": "r1b1kr2/pp3pp1/n1Np4/8/4K3/2b1P3/P2P3P/1RB2B1R b q - 1 28",
-        "move": "Bh3",
-        "best_line": [
-            "a6c5",
-            "e4f4",
-            "g7g5",
-            "f4g3",
-            "c8f5",
-            "b1b7"
-        ],
-        "loss": -692,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 29,
-        "fen": "r3kr2/pp3pp1/n1Np4/8/4K3/2b1P2b/P2P3P/1RB2B1R w q - 2 29",
-        "move": "Ne7",
-        "best_line": [
-            "f1h3",
-            "b7c6",
-            "d2c3",
-            "f8h8",
-            "h3g2",
-            "e8d7"
-        ],
-        "loss": 612,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 29,
-        "fen": "r3kr2/pp2Npp1/n2p4/8/4K3/2b1P2b/P2P3P/1RB2B1R b q - 3 29",
-        "move": "Kd8",
-        "best_line": [
-            "a6c5",
-            "e4f3",
-            "h3f1",
-            "h1f1",
-            "e8e7",
-            "d2c3"
-        ],
-        "loss": -591,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 30,
-        "fen": "r2k1r2/pp2Npp1/n2p4/8/4K3/2b1P2b/P2P3P/1RB2B1R w - - 4 30",
-        "move": "Nc8",
-        "best_line": [
-            "f1h3",
-            "d8e7",
-            "d2c3",
-            "f8h8",
-            "h3g2",
-            "a6c5"
-        ],
-        "loss": 621,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 30,
-        "fen": "r1Nk1r2/pp3pp1/n2p4/8/4K3/2b1P2b/P2P3P/1RB2B1R b - - 5 30",
-        "move": "Kd7",
-        "best_line": [
-            "a6c5",
-            "e4f3",
-            "h3f5",
-            "c8d6",
-            "f5b1",
-            "c1a3"
-        ],
-        "loss": -666,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 31,
-        "fen": "r1N2r2/pp1k1pp1/n2p4/8/4K3/2b1P2b/P2P3P/1RB2B1R w - - 6 31",
-        "move": "Nb6+",
-        "best_line": [
-            "f1h3",
-            "f7f5",
-            "h3f5",
-            "f8f5",
-            "e4f5",
-            "a8c8"
-        ],
-        "loss": 420,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 31,
-        "fen": "r4r2/pp1k1pp1/nN1p4/8/4K3/2b1P2b/P2P3P/1RB2B1R b - - 7 31",
-        "move": "axb6",
-        "best_line": [
-            "a7b6",
-            "f1h3",
-            "f7f5",
-            "e4f3",
-            "g7g5",
-            "f3e2"
-        ],
+        "before_evaluation": 9993,
+        "after_evaluation": 9994,
         "loss": -1,
         "category": "GOOD",
-        "reason": "Lost a piece"
+        "reason": "This move resulted in a noticeable material loss."
     },
     {
-        "move_number": 32,
-        "fen": "r4r2/1p1k1pp1/np1p4/8/4K3/2b1P2b/P2P3P/1RB2B1R w - - 0 32",
-        "move": "Bb5+",
+        "move_number": 25,
+        "fen": "r1b2r1k/p1q5/2p1pPB1/1p5Q/6pP/2P1P1P1/6P1/2R2RK1 b - - 0 25",
+        "move": "Kg8",
+        "best_move": "Kg8",
         "best_line": [
-            "f1h3",
-            "f7f5",
-            "e4f3",
-            "g7g5",
-            "f3e2",
-            "c3g7"
+            "h8g8",
+            "f6f7",
+            "f8f7",
+            "g6f7",
+            "g8f8",
+            "h5h8"
         ],
-        "loss": 425,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 32,
-        "fen": "r4r2/1p1k1pp1/np1p4/1B6/4K3/2b1P2b/P2P3P/1RB4R b - - 1 32",
-        "move": "Kc7",
-        "best_line": [
-            "d7e7",
-            "e4f3",
-            "c3f6",
-            "d2d4",
-            "a6c7",
-            "b5d3"
-        ],
-        "loss": -33,
+        "before_evaluation": 9994,
+        "after_evaluation": 9994,
+        "loss": 0,
         "category": "GOOD",
-        "reason": "No material loss"
+        "reason": "This move was slightly less accurate than the best option."
     },
     {
-        "move_number": 33,
-        "fen": "r4r2/1pk2pp1/np1p4/1B6/4K3/2b1P2b/P2P3P/1RB4R w - - 2 33",
-        "move": "Rb2",
+        "move_number": 26,
+        "fen": "r1b2rk1/p1q5/2p1pPB1/1p5Q/6pP/2P1P1P1/6P1/2R2RK1 w - - 1 26",
+        "move": "f7+",
+        "best_move": "f7+",
         "best_line": [
-            "e4f3",
-            "c3f6",
-            "a2a4",
-            "a6c5",
-            "d2d4",
-            "c5a4"
+            "f6f7",
+            "f8f7",
+            "g6f7",
+            "g8f8",
+            "h5h8",
+            "f8e7"
         ],
-        "loss": 327,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 33,
-        "fen": "r4r2/1pk2pp1/np1p4/1B6/4K3/2b1P2b/PR1P3P/2B4R b - - 3 33",
-        "move": "Bxb2",
-        "best_line": [
-            "c3b2",
-            "e4f3",
-            "b2f6",
-            "c1a3",
-            "a6c5",
-            "a3b4"
-        ],
-        "loss": 3,
+        "before_evaluation": 9994,
+        "after_evaluation": 9995,
+        "loss": -1,
         "category": "GOOD",
-        "reason": "Lost a piece"
+        "reason": "This move was slightly less accurate than the best option."
     },
     {
-        "move_number": 34,
-        "fen": "r4r2/1pk2pp1/np1p4/1B6/4K3/4P2b/Pb1P3P/2B4R w - - 0 34",
-        "move": "Rf1",
+        "move_number": 26,
+        "fen": "r1b2rk1/p1q2P2/2p1p1B1/1p5Q/6pP/2P1P1P1/6P1/2R2RK1 b - - 0 26",
+        "move": "Rxf7",
+        "best_move": "Rxf7",
         "best_line": [
-            "e4f3",
-            "b2f6",
-            "a2a4",
-            "h3d7",
-            "d2d4",
-            "d7c6"
+            "f8f7",
+            "g6f7",
+            "g8f8",
+            "h5h8",
+            "f8e7",
+            "h8f6"
         ],
-        "loss": 147,
-        "category": "MISTAKE",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 34,
-        "fen": "r4r2/1pk2pp1/np1p4/1B6/4K3/4P2b/Pb1P3P/2B2R2 b - - 1 34",
-        "move": "Bg2+",
-        "best_line": [
-            "h3f1",
-            "b5f1",
-            "a6c5",
-            "e4d5",
-            "b2c1",
-            "d2d4"
-        ],
-        "loss": 14,
+        "before_evaluation": 9995,
+        "after_evaluation": 9995,
+        "loss": 0,
         "category": "GOOD",
-        "reason": "No material loss"
+        "reason": "This move resulted in a noticeable material loss."
     },
     {
-        "move_number": 35,
-        "fen": "r4r2/1pk2pp1/np1p4/1B6/4K3/4P3/Pb1P2bP/2B2R2 w - - 2 35",
-        "move": "Kf5",
+        "move_number": 27,
+        "fen": "r1b3k1/p1q2r2/2p1p1B1/1p5Q/6pP/2P1P1P1/6P1/2R2RK1 w - - 0 27",
+        "move": "Bxf7+",
+        "best_move": "Bxf7+",
         "best_line": [
-            "f1f3",
-            "b2c1",
-            "e4f4",
-            "g2f3",
-            "f4f3",
-            "c1a3"
+            "g6f7",
+            "g8f8",
+            "h5h8",
+            "f8e7",
+            "h8f6",
+            "e7f8"
         ],
-        "loss": 33,
+        "before_evaluation": 9995,
+        "after_evaluation": 9996,
+        "loss": -1,
         "category": "GOOD",
-        "reason": "No material loss"
+        "reason": "This move resulted in a significant material loss."
     },
     {
-        "move_number": 35,
-        "fen": "r4r2/1pk2pp1/np1p4/1B3K2/8/4P3/Pb1P2bP/2B2R2 b - - 3 35",
-        "move": "g6+",
+        "move_number": 27,
+        "fen": "r1b3k1/p1q2B2/2p1p3/1p5Q/6pP/2P1P1P1/6P1/2R2RK1 b - - 0 27",
+        "move": "Qxf7",
+        "best_move": "Kf8",
         "best_line": [
-            "g2f1",
-            "c1b2",
-            "f1b5",
-            "b2g7",
-            "b5d3",
-            "f5f4"
+            "g8f8",
+            "h5h8",
+            "f8e7",
+            "h8f6",
+            "e7f8",
+            "f7e6"
         ],
-        "loss": -55,
-        "category": "INACCURACY",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 36,
-        "fen": "r4r2/1pk2p2/np1p2p1/1B3K2/8/4P3/Pb1P2bP/2B2R2 w - - 0 36",
-        "move": "Kg5",
-        "best_line": [
-            "f5g5",
-            "g2f1",
-            "b5a6",
-            "a8a6",
-            "c1b2",
-            "f8e8"
-        ],
-        "loss": 3,
+        "before_evaluation": 9996,
+        "after_evaluation": 9998,
+        "loss": 2,
         "category": "GOOD",
-        "reason": "No material loss"
+        "reason": "This move resulted in a significant material loss."
     },
     {
-        "move_number": 36,
-        "fen": "r4r2/1pk2p2/np1p2p1/1B4K1/8/4P3/Pb1P2bP/2B2R2 b - - 1 36",
-        "move": "Rh8",
-        "best_line": [
-            "g2f1",
-            "b5a6",
-            "a8a6",
-            "c1b2",
-            "f1d3",
-            "g5f6"
-        ],
-        "loss": -272,
-        "category": "MISTAKE",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 37,
-        "fen": "r6r/1pk2p2/np1p2p1/1B4K1/8/4P3/Pb1P2bP/2B2R2 w - - 2 37",
-        "move": "Bc6",
+        "move_number": 28,
+        "fen": "r1b3k1/p4q2/2p1p3/1p5Q/6pP/2P1P1P1/6P1/2R2RK1 w - - 0 28",
+        "move": "Qxf7+",
+        "best_move": "Rxf7",
         "best_line": [
             "f1f7",
-            "c7b8",
-            "c1b2",
-            "h8h5",
-            "g5g6",
-            "h5b5"
+            "c6c5",
+            "h5h7"
         ],
-        "loss": 307,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 37,
-        "fen": "r6r/1pk2p2/npBp2p1/6K1/8/4P3/Pb1P2bP/2B2R2 b - - 3 37",
-        "move": "Rh5+",
-        "best_line": [
-            "h8h5",
-            "g5g4",
-            "g2f1",
-            "c1b2",
-            "c7c6",
-            "b2d4"
-        ],
-        "loss": 21,
-        "category": "GOOD",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 38,
-        "fen": "r7/1pk2p2/npBp2p1/6Kr/8/4P3/Pb1P2bP/2B2R2 w - - 4 38",
-        "move": "Kf4",
-        "best_line": [
-            "g5g4",
-            "g2f1",
-            "c1b2",
-            "c7c6",
-            "d2d3",
-            "a6c5"
-        ],
-        "loss": 72,
-        "category": "INACCURACY",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 38,
-        "fen": "r7/1pk2p2/npBp2p1/7r/5K2/4P3/Pb1P2bP/2B2R2 b - - 5 38",
-        "move": "Be5+",
-        "best_line": [
-            "b2e5",
-            "f4g4",
-            "g2f1",
-            "h2h4",
-            "c7c6",
-            "d2d4"
-        ],
-        "loss": 21,
-        "category": "GOOD",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 39,
-        "fen": "r7/1pk2p2/npBp2p1/4b2r/5K2/4P3/P2P2bP/2B2R2 w - - 6 39",
-        "move": "Kg4",
-        "best_line": [
-            "f4g4",
-            "g2f1",
-            "h2h4",
-            "c7c6",
-            "c1a3",
-            "f1e2"
-        ],
-        "loss": 53,
-        "category": "INACCURACY",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 39,
-        "fen": "r7/1pk2p2/npBp2p1/4b2r/6K1/4P3/P2P2bP/2B2R2 b - - 7 39",
-        "move": "Bh3+",
-        "best_line": [
-            "g2f1",
-            "c6b5",
-            "f1b5",
-            "d2d3",
-            "b5d3",
-            "h2h4"
-        ],
-        "loss": -79,
-        "category": "INACCURACY",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 40,
-        "fen": "r7/1pk2p2/npBp2p1/4b2r/6K1/4P2b/P2P3P/2B2R2 w - - 8 40",
-        "move": "Kf3",
-        "best_line": [
-            "g4f3",
-            "h5f5",
-            "f3e2",
-            "h3f1",
-            "e2d1",
-            "c7c6"
-        ],
-        "loss": 39,
-        "category": "GOOD",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 40,
-        "fen": "r7/1pk2p2/npBp2p1/4b2r/8/4PK1b/P2P3P/2B2R2 b - - 9 40",
-        "move": "Rf5+",
-        "best_line": [
-            "h5f5",
-            "f3e2",
-            "h3f1",
-            "e2d1",
-            "c7c6",
-            "e3e4"
-        ],
-        "loss": 32,
-        "category": "GOOD",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 41,
-        "fen": "r7/1pk2p2/npBp2p1/4br2/8/4PK1b/P2P3P/2B2R2 w - - 10 41",
-        "move": "Ke2",
-        "best_line": [
-            "f3e2",
-            "h3f1",
-            "e2d1",
-            "c7c6",
-            "e3e4",
-            "f5f3"
-        ],
-        "loss": -25,
-        "category": "GOOD",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 41,
-        "fen": "r7/1pk2p2/npBp2p1/4br2/8/4P2b/P2PK2P/2B2R2 b - - 11 41",
-        "move": "Bxf1+",
-        "best_line": [
-            "h3f1",
-            "e2d1",
-            "c7c6",
-            "e3e4",
-            "f5f3",
-            "d2d4"
-        ],
-        "loss": 0,
-        "category": "GOOD",
-        "reason": "Lost a piece"
-    },
-    {
-        "move_number": 42,
-        "fen": "r7/1pk2p2/npBp2p1/4br2/8/4P3/P2PK2P/2B2b2 w - - 0 42",
-        "move": "Kd1",
-        "best_line": [
-            "e2d1",
-            "c7c6",
-            "e3e4",
-            "f5f3",
-            "d2d4",
-            "e5d4"
-        ],
-        "loss": -74,
-        "category": "INACCURACY",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 42,
-        "fen": "r7/1pk2p2/npBp2p1/4br2/8/4P3/P2P3P/2BK1b2 b - - 1 42",
-        "move": "Kd8",
-        "best_line": [
-            "c7c6",
-            "e3e4",
-            "f5f3",
-            "d2d4",
-            "e5d4",
-            "a2a4"
-        ],
-        "loss": -366,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 43,
-        "fen": "r2k4/1p3p2/npBp2p1/4br2/8/4P3/P2P3P/2BK1b2 w - - 2 43",
-        "move": "Bd7",
-        "best_line": [
-            "c6e4",
-            "a6c5",
-            "e4f5",
-            "g6f5",
-            "d2d4",
-            "a8a2"
-        ],
-        "loss": 207,
-        "category": "MISTAKE",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 43,
-        "fen": "r2k4/1p1B1p2/np1p2p1/4br2/8/4P3/P2P3P/2BK1b2 b - - 3 43",
-        "move": "Kxd7",
-        "best_line": [
-            "d8d7",
-            "d2d4",
-            "e5f6",
-            "e3e4",
-            "f5f3",
-            "c1b2"
-        ],
-        "loss": 31,
-        "category": "GOOD",
-        "reason": "Lost a piece"
-    },
-    {
-        "move_number": 44,
-        "fen": "r7/1p1k1p2/np1p2p1/4br2/8/4P3/P2P3P/2BK1b2 w - - 0 44",
-        "move": "d4",
-        "best_line": [
-            "d2d4",
-            "e5f6",
-            "e3e4",
-            "f5f3",
-            "c1b2",
-            "f1c4"
-        ],
-        "loss": 23,
-        "category": "GOOD",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 44,
-        "fen": "r7/1p1k1p2/np1p2p1/4br2/3P4/4P3/P6P/2BK1b2 b - - 0 44",
-        "move": "g5",
-        "best_line": [
-            "e5f6",
-            "h2h4",
-            "f1c4",
-            "h4h5",
-            "f5f1",
-            "d1c2"
-        ],
-        "loss": -173,
-        "category": "MISTAKE",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 45,
-        "fen": "r7/1p1k1p2/np1p4/4brp1/3P4/4P3/P6P/2BK1b2 w - - 0 45",
-        "move": "h4",
-        "best_line": [
-            "d4e5",
-            "a6c5",
-            "a2a3",
-            "d6e5",
-            "c1b2",
-            "f1d3"
-        ],
-        "loss": 61,
-        "category": "INACCURACY",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 45,
-        "fen": "r7/1p1k1p2/np1p4/4brp1/3P3P/4P3/P7/2BK1b2 b - - 0 45",
-        "move": "gxh4",
-        "best_line": [
-            "f1c4",
-            "a2a4",
-            "f5f1",
-            "d1c2",
-            "e5f6",
-            "c1a3"
-        ],
-        "loss": -47,
-        "category": "GOOD",
-        "reason": "Small mistake"
-    },
-    {
-        "move_number": 46,
-        "fen": "r7/1p1k1p2/np1p4/4br2/3P3p/4P3/P7/2BK1b2 w - - 0 46",
-        "move": "Ba3",
-        "best_line": [
-            "a2a4",
-            "f1c4",
-            "d4e5",
-            "f5f1",
-            "d1d2",
-            "d6e5"
-        ],
-        "loss": 41,
-        "category": "GOOD",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 46,
-        "fen": "r7/1p1k1p2/np1p4/4br2/3P3p/B3P3/P7/3K1b2 b - - 1 46",
-        "move": "h3",
-        "best_line": [
-            "f1c4",
-            "d1d2",
-            "f5f2",
-            "d2e1",
-            "f2e2",
-            "e1d1"
-        ],
-        "loss": -21,
-        "category": "GOOD",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 47,
-        "fen": "r7/1p1k1p2/np1p4/4br2/3P4/B3P2p/P7/3K1b2 w - - 0 47",
-        "move": "e4",
-        "best_line": [
-            "a3b2",
-            "e5f6",
-            "e3e4",
-            "f1c4",
-            "e4e5",
-            "h3h2"
-        ],
-        "loss": 60,
-        "category": "INACCURACY",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 47,
-        "fen": "r7/1p1k1p2/np1p4/4br2/3PP3/B6p/P7/3K1b2 b - - 0 47",
-        "move": "h2",
-        "best_line": [
-            "f1c4",
-            "d4e5",
-            "f5e5",
-            "d1d2",
-            "h3h2",
-            "a3c1"
-        ],
-        "loss": -17,
-        "category": "GOOD",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 48,
-        "fen": "r7/1p1k1p2/np1p4/4br2/3PP3/B7/P6p/3K1b2 w - - 0 48",
-        "move": "Kc2",
-        "best_line": [
-            "d4e5",
-            "f5e5",
-            "a3b2",
-            "e5e4",
-            "b2h8",
-            "f1c4"
-        ],
-        "loss": 8619,
-        "category": "BLUNDER",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 48,
-        "fen": "r7/1p1k1p2/np1p4/4br2/3PP3/B7/P1K4p/5b2 b - - 1 48",
-        "move": "h1=Q",
-        "best_line": [
-            "f5f2",
-            "c2d1",
-            "f1c4",
-            "a3b4",
-            "a6b4",
-            "d1e1"
-        ],
-        "loss": -2,
-        "category": "GOOD",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 49,
-        "fen": "r7/1p1k1p2/np1p4/4br2/3PP3/B7/P1K5/5b1q w - - 0 49",
-        "move": "exf5",
-        "best_line": [
-            "e4f5",
-            "h1e4",
-            "c2c1",
-            "e5f4",
-            "c1b2",
-            "e4d4"
-        ],
-        "loss": 0,
-        "category": "GOOD",
-        "reason": "Lost a piece"
-    },
-    {
-        "move_number": 49,
-        "fen": "r7/1p1k1p2/np1p4/4bP2/3P4/B7/P1K5/5b1q b - - 0 49",
-        "move": "Qe4+",
-        "best_line": [
-            "h1e4",
-            "c2c1",
-            "a8c8",
-            "a3c5",
-            "e4d4",
-            "c1c2"
-        ],
+        "before_evaluation": 9998,
+        "after_evaluation": 9997,
         "loss": 1,
         "category": "GOOD",
-        "reason": "No material loss"
+        "reason": "This move resulted in a significant material loss."
     },
     {
-        "move_number": 50,
-        "fen": "r7/1p1k1p2/np1p4/4bP2/3Pq3/B7/P1K5/5b2 w - - 1 50",
-        "move": "Kb2",
+        "move_number": 28,
+        "fen": "r1b3k1/p4Q2/2p1p3/1p6/6pP/2P1P1P1/6P1/2R2RK1 b - - 0 28",
+        "move": "Kh8",
+        "best_move": "Kh8",
         "best_line": [
-            "c2c3",
-            "e4d3",
-            "c3b2",
-            "e5d4",
-            "b2c1",
-            "a8c8"
+            "g8h8",
+            "f7h5",
+            "h8g8",
+            "h5g6",
+            "g8h8",
+            "f1f8"
         ],
-        "loss": 0,
-        "category": "GOOD",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 50,
-        "fen": "r7/1p1k1p2/np1p4/4bP2/3Pq3/B7/PK6/5b2 b - - 2 50",
-        "move": "Bxd4+",
-        "best_line": [
-            "e4d4",
-            "b2c1",
-            "a8c8",
-            "a3c5",
-            "c8c5",
-            "c1b1"
-        ],
+        "before_evaluation": 9997,
+        "after_evaluation": 9998,
         "loss": 1,
         "category": "GOOD",
-        "reason": "Small mistake"
+        "reason": "This move was slightly less accurate than the best option."
     },
     {
-        "move_number": 51,
-        "fen": "r7/1p1k1p2/np1p4/5P2/3bq3/B7/PK6/5b2 w - - 0 51",
-        "move": "Kc1",
+        "move_number": 29,
+        "fen": "r1b4k/p4Q2/2p1p3/1p6/6pP/2P1P1P1/6P1/2R2RK1 w - - 1 29",
+        "move": "Qh5+",
+        "best_move": "Rf6",
         "best_line": [
-            "b2c1",
-            "a8c8",
-            "a3c5",
-            "c8c5",
-            "c1d2",
-            "e4e2"
+            "f1f6",
+            "c6c5",
+            "f6h6"
         ],
+        "before_evaluation": 9998,
+        "after_evaluation": 9998,
         "loss": 0,
         "category": "GOOD",
-        "reason": "No material loss"
+        "reason": "This move was slightly less accurate than the best option."
     },
     {
-        "move_number": 51,
-        "fen": "r7/1p1k1p2/np1p4/5P2/3bq3/B7/P7/2K2b2 b - - 1 51",
-        "move": "Qe3+",
+        "move_number": 29,
+        "fen": "r1b4k/p7/2p1p3/1p5Q/6pP/2P1P1P1/6P1/2R2RK1 b - - 2 29",
+        "move": "Kg8",
+        "best_move": "Kg7",
         "best_line": [
-            "a8c8",
-            "a3c5",
-            "c8c5",
-            "c1d2",
-            "e4e2"
+            "h8g7",
+            "f1f7",
+            "g7g8",
+            "h5h7"
         ],
+        "before_evaluation": 9998,
+        "after_evaluation": 9998,
         "loss": 0,
         "category": "GOOD",
-        "reason": "No material loss"
+        "reason": "This move was slightly less accurate than the best option."
     },
     {
-        "move_number": 52,
-        "fen": "r7/1p1k1p2/np1p4/5P2/3b4/B3q3/P7/2K2b2 w - - 2 52",
-        "move": "Kd1",
+        "move_number": 30,
+        "fen": "r1b3k1/p7/2p1p3/1p5Q/6pP/2P1P1P1/6P1/2R2RK1 w - - 3 30",
+        "move": "Qf7+",
+        "best_move": "Qg6+",
         "best_line": [
-            "c1d1",
-            "f1e2",
-            "d1c2",
-            "e3d3",
-            "c2c1",
-            "d3d1"
+            "h5g6",
+            "g8h8",
+            "f1f8"
         ],
+        "before_evaluation": 9998,
+        "after_evaluation": 9997,
+        "loss": 1,
+        "category": "GOOD",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 30,
+        "fen": "r1b3k1/p4Q2/2p1p3/1p6/6pP/2P1P1P1/6P1/2R2RK1 b - - 4 30",
+        "move": "Kh8",
+        "best_move": "Kh8",
+        "best_line": [
+            "g8h8",
+            "f7h5",
+            "h8g7",
+            "f1f7",
+            "g7g8",
+            "h5h7"
+        ],
+        "before_evaluation": 9997,
+        "after_evaluation": 9998,
+        "loss": 1,
+        "category": "GOOD",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 31,
+        "fen": "r1b4k/p4Q2/2p1p3/1p6/6pP/2P1P1P1/6P1/2R2RK1 w - - 5 31",
+        "move": "Qf8+",
+        "best_move": "Rf6",
+        "best_line": [
+            "f1f6",
+            "c6c5",
+            "f6h6"
+        ],
+        "before_evaluation": 9998,
+        "after_evaluation": 9998,
         "loss": 0,
         "category": "GOOD",
-        "reason": "No material loss"
+        "reason": "This move was slightly less accurate than the best option."
     },
     {
-        "move_number": 52,
-        "fen": "r7/1p1k1p2/np1p4/5P2/3b4/B3q3/P7/3K1b2 b - - 3 52",
-        "move": "Qe2+",
+        "move_number": 31,
+        "fen": "r1b2Q1k/p7/2p1p3/1p6/6pP/2P1P1P1/6P1/2R2RK1 b - - 6 31",
+        "move": "Kh7",
+        "best_move": "Kh7",
         "best_line": [
-            "e3a3",
-            "f5f6",
-            "a3d3",
-            "d1e1",
-            "d3e2"
+            "h8h7",
+            "f1f6",
+            "c6c5",
+            "f6h6"
         ],
+        "before_evaluation": 9998,
+        "after_evaluation": 9998,
         "loss": 0,
         "category": "GOOD",
-        "reason": "No material loss"
+        "reason": "This move was slightly less accurate than the best option."
     },
     {
-        "move_number": 53,
-        "fen": "r7/1p1k1p2/np1p4/5P2/3b4/B7/P3q3/3K1b2 w - - 4 53",
-        "move": "Kc1",
+        "move_number": 32,
+        "fen": "r1b2Q2/p6k/2p1p3/1p6/6pP/2P1P1P1/6P1/2R2RK1 w - - 7 32",
+        "move": "Rf7+",
+        "best_move": "Rf6",
         "best_line": [
-            "d1c1",
-            "a8c8",
-            "a3c5",
-            "c8c5",
-            "c1b1",
-            "e2b2"
+            "f1f6",
+            "c6c5",
+            "f6h6"
         ],
+        "before_evaluation": 9998,
+        "after_evaluation": 9998,
         "loss": 0,
         "category": "GOOD",
-        "reason": "No material loss"
+        "reason": "This move was slightly less accurate than the best option."
     },
     {
-        "move_number": 53,
-        "fen": "r7/1p1k1p2/np1p4/5P2/3b4/B7/P3q3/2K2b2 b - - 5 53",
-        "move": "Bb2+",
+        "move_number": 32,
+        "fen": "r1b2Q2/p4R1k/2p1p3/1p6/6pP/2P1P1P1/6P1/2R3K1 b - - 8 32",
+        "move": "Kg6",
+        "best_move": "Kg6",
         "best_line": [
-            "d4e3",
-            "c1b1",
-            "e2d1",
-            "b1b2",
-            "e3d4"
+            "h7g6",
+            "f7f6",
+            "g6h7",
+            "f6h6"
         ],
+        "before_evaluation": 9998,
+        "after_evaluation": 9998,
+        "loss": 0,
+        "category": "GOOD",
+        "reason": "This move was slightly less accurate than the best option."
+    },
+    {
+        "move_number": 33,
+        "fen": "r1b2Q2/p4R2/2p1p1k1/1p6/6pP/2P1P1P1/6P1/2R3K1 w - - 9 33",
+        "move": "Qg8+",
+        "best_move": "Rf6+",
+        "best_line": [
+            "f7f6",
+            "g6h7",
+            "f6h6"
+        ],
+        "before_evaluation": 9998,
+        "after_evaluation": 9999,
         "loss": -1,
         "category": "GOOD",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 54,
-        "fen": "r7/1p1k1p2/np1p4/5P2/8/B7/Pb2q3/2K2b2 w - - 6 54",
-        "move": "Bxb2",
-        "best_line": [
-            "a3b2",
-            "a8c8",
-            "b2c3",
-            "c8c3",
-            "c1b1",
-            "e2d1"
-        ],
-        "loss": 1,
-        "category": "GOOD",
-        "reason": "Lost a piece"
-    },
-    {
-        "move_number": 54,
-        "fen": "r7/1p1k1p2/np1p4/5P2/8/8/PB2q3/2K2b2 b - - 0 54",
-        "move": "Qc4+",
-        "best_line": [
-            "a6b4",
-            "c1b1",
-            "e2d3",
-            "b1c1",
-            "b4a2"
-        ],
-        "loss": -1,
-        "category": "GOOD",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 55,
-        "fen": "r7/1p1k1p2/np1p4/5P2/2q5/8/PB6/2K2b2 w - - 1 55",
-        "move": "Kd1",
-        "best_line": [
-            "b2c3",
-            "c4c3",
-            "c1d1",
-            "a8c8",
-            "f5f6",
-            "c3c1"
-        ],
-        "loss": 0,
-        "category": "GOOD",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 55,
-        "fen": "r7/1p1k1p2/np1p4/5P2/2q5/8/PB6/3K1b2 b - - 2 55",
-        "move": "Qd3+",
-        "best_line": [
-            "c4d3",
-            "d1c1",
-            "a6b4",
-            "b2c3",
-            "d3c2"
-        ],
-        "loss": 1,
-        "category": "GOOD",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 56,
-        "fen": "r7/1p1k1p2/np1p4/5P2/8/3q4/PB6/3K1b2 w - - 3 56",
-        "move": "Kc1",
-        "best_line": [
-            "d1c1",
-            "a6b4",
-            "b2c3",
-            "d3c2"
-        ],
-        "loss": 0,
-        "category": "GOOD",
-        "reason": "No material loss"
-    },
-    {
-        "move_number": 56,
-        "fen": "r7/1p1k1p2/np1p4/5P2/8/3q4/PB6/2K2b2 b - - 4 56",
-        "move": "Be2",
-        "best_line": [
-            "a6b4",
-            "b2c3",
-            "d3c2"
-        ],
-        "loss": -2,
-        "category": "GOOD",
-        "reason": "No material loss"
+        "reason": "This move was slightly less accurate than the best option."
     }
 ]
