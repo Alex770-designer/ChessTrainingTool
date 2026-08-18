@@ -7,6 +7,7 @@ import os
 from imports.chesscom import get_chesscom_game
 from puzzle_generator import generate_puzzles
 from imports.lichess import get_lichess_game
+from report_generator import generate_phase_report, generate_overall_report
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -21,6 +22,10 @@ PUZZLES_PATH = os.path.join(
     "puzzles.json"
 )
 
+REPORT_PATH = os.path.join(
+    BASE_DIR,
+    "report.json"
+)
 
 app = Flask(__name__)
 
@@ -143,7 +148,10 @@ def import_chess_com():
         )
 
         # Analyze the retrieved game
-        result = analyze_pgn(pgn)
+        result = analyze_pgn(
+            pgn,
+            username=username
+)
 
         # Generate puzzles from the new analysis
         puzzles = generate_puzzles()
@@ -193,6 +201,40 @@ def import_lichess():
 
         return jsonify({
             "message": f"Error importing Lichess game: {str(e)}"
+        }), 500
+
+@app.route("/report")
+def get_report():
+
+    try:
+
+        phase_report = generate_phase_report()
+
+        overall_report = generate_overall_report(
+            phase_report
+        )
+
+        report = {
+            "phases": phase_report,
+            "overall": overall_report
+        }
+
+        with open(REPORT_PATH, "w") as file:
+            json.dump(
+                report,
+                file,
+                indent=4
+            )
+
+        return jsonify(report)
+
+    except Exception as e:
+
+        print("Report error:", e)
+
+        return jsonify({
+            "message": "Error generating report.",
+            "error": str(e)
         }), 500
 
 if __name__ == "__main__":

@@ -1,156 +1,100 @@
 [
     {
-        "fen": "rnbqkb1r/pp2pppp/2p2n2/3p4/2PP1B2/2N5/PP2PPPP/R2QKBNR b KQkq - 3 4",
+        "fen": "r2q1rk1/ppp2ppp/2npbn2/2b1p3/4P3/1BPP1N2/PP1N1PPP/R1BQK2R w KQ - 2 8",
         "solution": [
-            "d5c4",
-            "g1f3",
-            "f6d5",
-            "d1c1",
-            "d5f4",
-            "c1f4"
-        ],
-        "player_color": "black",
-        "category": "MISTAKE",
-        "reason": "This move missed a stronger opportunity."
-    },
-    {
-        "fen": "rnbqkb1r/pp3ppp/2p1pn2/3p4/2PP1B2/2N2N2/PP2PPPP/R2QKB1R b KQkq - 1 5",
-        "solution": [
-            "d5c4",
+            "b3e6",
+            "f7e6",
+            "b2b4",
+            "c5b6",
             "a2a4",
-            "f8b4",
-            "g2g3",
-            "f6e4",
-            "d1c2"
+            "a7a6"
         ],
-        "player_color": "black",
+        "player_color": "white",
         "category": "MISTAKE",
         "reason": "This move missed a stronger opportunity."
     },
     {
-        "fen": "rnb2rk1/pp3ppp/2p1pn2/q7/2BP1B2/PQP1PN2/5PPP/R3K2R b KQ - 0 10",
+        "fen": "r2q1rk1/ppp2ppp/2npbn2/2b1p3/4P3/2PP1N2/PPBN1PPP/R1BQK2R b KQ - 3 8",
         "solution": [
-            "f6d5",
+            "f6g4",
             "e1g1",
-            "d5f4",
-            "e3f4",
-            "b8d7",
-            "f1e1"
+            "c5f2",
+            "f1f2",
+            "g4e3",
+            "d1e2"
         ],
         "player_color": "black",
         "category": "MISTAKE",
         "reason": "This move missed a stronger opportunity."
     },
     {
-        "fen": "r1b2rk1/pp1n1p2/2p1p3/4N2p/2BP2pP/q1P1P1P1/2Q3P1/2R2RK1 w - - 2 18",
+        "fen": "3rrb2/pppq1ppk/2n1bn1p/4pN2/4P3/2P1B1NP/PPB1QPP1/R3K2R w KQ - 9 17",
         "solution": [
-            "e5f7",
-            "g8g7",
-            "c4e6",
-            "a3c1",
-            "f1c1",
-            "d7f6"
+            "e1g1",
+            "g7g6",
+            "f5h4",
+            "d7e7",
+            "h4f3",
+            "f6d7"
         ],
         "player_color": "white",
         "category": "MISTAKE",
         "reason": "This move gave the opponent a noticeable advantage."
     },
     {
-        "fen": "r1b2rk1/pp2qp2/2p1p3/4P2p/2B2QpP/2P1P1P1/6P1/2R2RK1 b - - 2 20",
+        "fen": "3rrb2/pppq1p1k/2n1b1pp/4pN2/4P1Q1/2P1B2P/PPB2PP1/R3K2R b KQ - 1 19",
         "solution": [
-            "g8g7",
-            "f4e4",
-            "f8h8",
-            "f1f6",
-            "a7a5",
-            "c1f1"
+            "c6e7",
+            "a1d1",
+            "d7b5",
+            "e3c1",
+            "b5a6",
+            "d1d8"
         ],
         "player_color": "black",
+        "category": "MISTAKE",
+        "reason": "This move gave the opponent a noticeable advantage."
+    },
+    {
+        "fen": "3rrb2/pppq1p1k/2n4p/3bpP2/6Q1/2P1B2P/PPB2PP1/R3K2R w KQ - 1 21",
+        "solution": [
+            "e1c1",
+            "e5e4",
+            "c3c4",
+            "c6e5",
+            "d1d5",
+            "e5g4"
+        ],
+        "player_color": "white",
+        "category": "MISTAKE",
+        "reason": "This move gave the opponent a noticeable advantage."
+    },
+    {
+        "fen": "3r2r1/pppq1p1k/2n2P1p/3b4/4p1Q1/2P4P/PPB2PP1/R3K2R w KQ - 1 24",
+        "solution": [
+            "g4h5",
+            "d7e6",
+            "e1c1",
+            "c6e5",
+            "h1e1",
+            "e6f6"
+        ],
+        "player_color": "white",
         "category": "MISTAKE",
         "reason": "This move missed a stronger opportunity."
     },
     {
-        "fen": "r1b2rk1/p3qp2/2p1p3/1p2P2p/2B2QpP/2P1P1P1/6P1/2R2RK1 w - - 0 21",
+        "fen": "3r2rk/pppq1p2/2n2P1p/8/4Q3/2P4P/PP3PP1/R3K2R w KQ - 1 26",
         "solution": [
-            "f4h6",
-            "f8d8",
-            "h6h5",
-            "d8d5",
-            "c4d5",
-            "e6d5"
+            "e1g1",
+            "d7h3",
+            "g2g3",
+            "d8e8",
+            "e4h1",
+            "h3h1"
         ],
         "player_color": "white",
         "category": "MISTAKE",
         "reason": "This move gave the opponent a noticeable advantage."
-    },
-    {
-        "fen": "r1b2rk1/p3qp2/2p1p3/1p2P2p/5QpP/2PBP1P1/6P1/2R2RK1 b - - 1 21",
-        "solution": [
-            "f8d8",
-            "c1d1",
-            "c8a6",
-            "f4e4",
-            "d8d3",
-            "e4d3"
-        ],
-        "player_color": "black",
-        "category": "MISTAKE",
-        "reason": "This move gave the opponent a noticeable advantage."
-    },
-    {
-        "fen": "r1b2rk1/p3q3/2p1pP2/1p5p/5QpP/2PBP1P1/6P1/2R2RK1 b - - 0 22",
-        "solution": [
-            "f8f6",
-            "f4f6",
-            "e7f6",
-            "f1f6",
-            "c8a6",
-            "f6e6"
-        ],
-        "player_color": "black",
-        "category": "BLUNDER",
-        "reason": "This move significantly worsened the position."
-    },
-    {
-        "fen": "r1b2rk1/p4q2/2p1pP2/1p5p/5QpP/2PBP1P1/6P1/2R2RK1 w - - 1 23",
-        "solution": [
-            "f4g5",
-            "g8h8",
-            "d3g6",
-            "e6e5",
-            "c1d1",
-            "c8e6"
-        ],
-        "player_color": "white",
-        "category": "BLUNDER",
-        "reason": "This move significantly worsened the position."
-    },
-    {
-        "fen": "r1b2r1k/p4q2/2p1pP2/1p4Qp/6pP/2PBP1P1/6P1/2R2RK1 w - - 3 24",
-        "solution": [
-            "d3g6",
-            "e6e5",
-            "g5h5",
-            "h8g8",
-            "g6f7",
-            "f8f7"
-        ],
-        "player_color": "white",
-        "category": "MISTAKE",
-        "reason": "This move gave the opponent a noticeable advantage."
-    },
-    {
-        "fen": "r1b2r1k/p4q2/2p1pPB1/1p4Qp/6pP/2P1P1P1/6P1/2R2RK1 b - - 4 24",
-        "solution": [
-            "c8d7",
-            "g5h5",
-            "h8g8",
-            "g6f7",
-            "f8f7",
-            "c1d1"
-        ],
-        "player_color": "black",
-        "category": "BLUNDER",
-        "reason": "This move caused a major deterioration in the position."
     }
 ]

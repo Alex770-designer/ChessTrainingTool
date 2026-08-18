@@ -1,0 +1,115 @@
+{
+    "phases": {
+        "OPENING": {
+            "you": {
+                "moves": 6,
+                "blunders": 0,
+                "mistakes": 0,
+                "inaccuracies": 0,
+                "average_loss": 9.7,
+                "largest_loss": 26,
+                "performance": "Excellent",
+                "patterns": []
+            },
+            "opponent": {
+                "moves": 7,
+                "blunders": 0,
+                "mistakes": 0,
+                "inaccuracies": 0,
+                "average_loss": 10.3,
+                "largest_loss": 35,
+                "performance": "Excellent",
+                "patterns": []
+            },
+            "summary": "Your opening was excellent. You avoided major mistakes and maintained a high level of accuracy. You performed better than your opponent during this phase."
+        },
+        "MIDDLEGAME": {
+            "you": {
+                "moves": 20,
+                "blunders": 0,
+                "mistakes": 2,
+                "inaccuracies": 4,
+                "average_loss": 41.0,
+                "largest_loss": 298,
+                "performance": "Inconsistent",
+                "patterns": [
+                    {
+                        "reason": "This move was slightly less accurate than the best option.",
+                        "count": 4
+                    },
+                    {
+                        "reason": "This move missed a stronger opportunity. Stockfish preferred Ng4.",
+                        "count": 1
+                    },
+                    {
+                        "reason": "This move resulted in a significant material loss.",
+                        "count": 1
+                    }
+                ]
+            },
+            "opponent": {
+                "moves": 19,
+                "blunders": 0,
+                "mistakes": 5,
+                "inaccuracies": 2,
+                "average_loss": 72.2,
+                "largest_loss": 297,
+                "performance": "Needs Improvement",
+                "patterns": [
+                    {
+                        "reason": "This move was slightly less accurate than the best option.",
+                        "count": 2
+                    },
+                    {
+                        "reason": "This move gave up a noticeable advantage. Stockfish preferred O-O.",
+                        "count": 2
+                    },
+                    {
+                        "reason": "You missed an opportunity to capture the opponent's bishop.",
+                        "count": 1
+                    },
+                    {
+                        "reason": "This move gave up a noticeable advantage. Stockfish preferred O-O-O.",
+                        "count": 1
+                    },
+                    {
+                        "reason": "This move resulted in a noticeable material loss.",
+                        "count": 1
+                    }
+                ]
+            },
+            "summary": "Your middlegame was somewhat inconsistent. You had several inaccuracies or mistakes that affected the position. You performed better than your opponent during this phase."
+        },
+        "ENDGAME": {
+            "you": {
+                "moves": 0,
+                "blunders": 0,
+                "mistakes": 0,
+                "inaccuracies": 0,
+                "average_loss": 0,
+                "largest_loss": 0,
+                "performance": "No moves played",
+                "patterns": []
+            },
+            "opponent": {
+                "moves": 0,
+                "blunders": 0,
+                "mistakes": 0,
+                "inaccuracies": 0,
+                "average_loss": 0,
+                "largest_loss": 0,
+                "performance": "No moves played",
+                "patterns": []
+            },
+            "summary": "You did not play any moves during the endgame."
+        }
+    },
+    "overall": {
+        "best_phase": "OPENING",
+        "worst_phase": "MIDDLEGAME",
+        "summary": "Your strongest phase was the opening, while your weakest phase was the middlegame.",
+        "strength": "Your opening was your strongest phase. You played accurately and avoided major mistakes.",
+        "weakness": "Your middlegame was your weakest phase. You made 2 mistakes and 4 inaccuracyies.",
+        "focus": "Focus on improving move accuracy and looking for stronger positional alternatives."
+    }
+}

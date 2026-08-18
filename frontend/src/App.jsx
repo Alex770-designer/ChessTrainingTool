@@ -3,6 +3,7 @@ import Upload from "./pages/Upload";
 import PuzzleTrainer from "./pages/App";
 import Analysis from "./pages/Analysis";
 import MoveList from "./pages/MoveList";
+import Report from "./pages/Report";
 
 export default function App() {
 
@@ -38,6 +39,13 @@ export default function App() {
         >
           Puzzle Trainer
         </button>
+
+        <button
+          onClick={() => setPage("report")}
+          style={{ marginRight: "10px" }}
+        >
+          Performance Report
+        </button>
       </div>
 
 
@@ -48,6 +56,8 @@ export default function App() {
       {page === "analysis" && <Analysis />}
 
       {page === "movelist" && <MoveList />}
+
+      {page === "report" && <Report />}
 
     </div>
   );
