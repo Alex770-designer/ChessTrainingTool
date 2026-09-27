@@ -42,7 +42,6 @@ def analyze_moves(moves):
     ]
 
     average_loss = sum(losses) / len(losses)
-
     largest_loss = max(losses)
 
     return {
@@ -81,39 +80,100 @@ def performance_rating(stats):
 
 def identify_patterns(moves):
     """
-    Identify the most common reasons for mistakes.
+    Identify recurring chess mistake patterns using
+    machine-readable reason_type values.
     """
 
-    patterns = {}
+    pattern_counts = {}
 
     for move in moves:
 
-        if move["category"] == "GOOD":
+        if move.get("category") == "GOOD":
             continue
 
-        reason = move.get(
-            "reason",
-            "Unknown"
+        reason_type = move.get("reason_type")
+
+        if not reason_type:
+
+            reason = move.get(
+                "reason",
+                "Unknown"
+            )
+
+            pattern_counts[reason] = (
+                pattern_counts.get(reason, 0) + 1
+            )
+
+            continue
+
+        if reason_type == "INACCURACY":
+            continue
+
+        pattern_counts[reason_type] = (
+            pattern_counts.get(reason_type, 0) + 1
         )
 
-        patterns[reason] = patterns.get(
-            reason,
-            0
-        ) + 1
+    descriptions = {
 
-    sorted_patterns = sorted(
-        patterns.items(),
-        key=lambda item: item[1],
+        "MISSED_CAPTURE":
+            "You missed opportunities to capture valuable pieces.",
+
+        "MISSED_CHECK":
+            "You missed stronger checking opportunities.",
+
+        "MISSED_PROMOTION":
+            "You missed opportunities to promote a pawn.",
+
+        "TACTICAL_OPPORTUNITY":
+            "You missed important tactical opportunities.",
+
+        "HANGING_PIECE":
+            "You allowed your pieces to become immediately vulnerable.",
+
+        "FORK":
+            "Forks and double attacks played a role in your mistakes.",
+
+        "MATERIAL_LOSS":
+            "You lost noticeable material during this phase.",
+
+        "SIGNIFICANT_MATERIAL_LOSS":
+            "You suffered significant material losses during this phase.",
+
+        "MAJOR_EVALUATION_LOSS":
+            "You had moves that caused major deterioration in the position.",
+
+        "SIGNIFICANT_EVALUATION_LOSS":
+            "Several moves significantly worsened your position.",
+
+        "MISSED_OPPORTUNITY":
+            "You missed stronger opportunities in the position."
+    }
+
+    patterns = []
+
+    for reason_type, count in pattern_counts.items():
+
+        if reason_type not in descriptions:
+
+            patterns.append({
+                "reason": reason_type,
+                "count": count
+            })
+
+        else:
+
+            patterns.append({
+                "type": reason_type,
+                "count": count,
+                "description": descriptions[reason_type]
+            })
+
+    patterns.sort(
+        key=lambda pattern: pattern["count"],
         reverse=True
     )
 
-    return [
-        {
-            "reason": reason,
-            "count": count
-        }
-        for reason, count in sorted_patterns
-    ]
+    return patterns
 
 
 def generate_summary(
@@ -168,8 +228,6 @@ def generate_summary(
             f"Several significant errors caused "
             f"substantial deterioration in the position."
         )
-
-    # Compare your performance with the opponent
 
     if stats["average_loss"] < opponent_stats["average_loss"]:
 
@@ -226,10 +284,6 @@ def generate_phase_report():
         }
     }
 
-    # -----------------------------------------
-    # Group moves by phase and player
-    # -----------------------------------------
-
     for move in analysis:
 
         phase = move.get("phase")
@@ -246,21 +300,12 @@ def generate_phase_report():
 
         phases[phase][color].append(move)
 
-    # -----------------------------------------
-    # Determine player's color
-    # -----------------------------------------
-
     player_color = player_color.upper()
 
     if player_color == "WHITE":
         opponent_color = "BLACK"
-
     else:
         opponent_color = "WHITE"
-
-    # -----------------------------------------
-    # Generate report
-    # -----------------------------------------
 
     report = {}
 
@@ -324,6 +369,146 @@ def generate_phase_report():
 
     return report
 
+
+def identify_overall_weakness(report):
+    """
+    Identify the player's most significant recurring weakness
+    across all phases of the game.
+    """
+
+    pattern_counts = {}
+
+    for phase, data in report.items():
+
+        for pattern in data["you"].get("patterns", []):
+
+            pattern_type = pattern.get("type")
+
+            if not pattern_type:
+                continue
+
+            pattern_counts[pattern_type] = (
+                pattern_counts.get(pattern_type, 0)
+                + pattern.get("count", 0)
+            )
+
+    if not pattern_counts:
+        return {
+            "type": None,
+            "count": 0,
+            "description": None,
+            "focus": None
+        }
+
+    skill_groups = {
+
+        "TACTICAL_AWARENESS": {
+
+            "types": [
+                "HANGING_PIECE",
+                "FORK",
+                "MISSED_CAPTURE",
+                "MISSED_CHECK",
+                "MISSED_PROMOTION",
+                "TACTICAL_OPPORTUNITY"
+            ],
+
+            "description": (
+                "You showed recurring tactical weaknesses, "
+                "particularly in recognizing forcing moves "
+                "and tactical threats."
+            ),
+
+            "focus": (
+                "Focus on tactical awareness. Before every move, "
+                "look for checks, captures, and threats for both "
+                "you and your opponent."
+            )
+        },
+
+        "MATERIAL_MANAGEMENT": {
+
+            "types": [
+                "MATERIAL_LOSS",
+                "SIGNIFICANT_MATERIAL_LOSS"
+            ],
+
+            "description": (
+                "You showed recurring problems with material "
+                "management and protecting your pieces."
+            ),
+
+            "focus": (
+                "Focus on protecting your pieces and checking "
+                "whether your opponent has tactical ways to win "
+                "material before committing to a move."
+            )
+        },
+
+        "CALCULATION": {
+
+            "types": [
+                "MISSED_OPPORTUNITY",
+                "SIGNIFICANT_EVALUATION_LOSS",
+                "MAJOR_EVALUATION_LOSS"
+            ],
+
+            "description": (
+                "You had recurring difficulty finding stronger "
+                "continuations and accurately comparing candidate "
+                "moves."
+            ),
+
+            "focus": (
+                "Focus on calculating candidate moves more deeply. "
+                "After choosing a move, examine your opponent's "
+                "strongest response before playing it."
+            )
+        }
+    }
+
+    skill_scores = {}
+
+    for skill, data in skill_groups.items():
+
+        score = 0
+
+        for pattern_type in data["types"]:
+
+            score += pattern_counts.get(
+                pattern_type,
+                0
+            )
+
+        skill_scores[skill] = score
+
+    weakest_skill = max(
+        skill_scores,
+        key=skill_scores.get
+    )
+
+    weakest_score = skill_scores[weakest_skill]
+
+    if weakest_score == 0:
+        return {
+            "type": None,
+            "count": 0,
+            "description": None,
+            "focus": None
+        }
+
+    weakness_data = skill_groups[
+        weakest_skill
+    ]
+
+    return {
+        "type": weakest_skill,
+        "count": weakest_score,
+        "description": weakness_data["description"],
+        "focus": weakness_data["focus"]
+    }
+
+
 def generate_overall_report(report):
     """
     Generate an overall summary from the phase reports.
@@ -334,11 +519,13 @@ def generate_overall_report(report):
     for phase, data in report.items():
 
         if data["you"]["moves"] > 0:
+
             phases_with_moves.append(
                 (phase, data["you"])
             )
 
     if not phases_with_moves:
+
         return {
             "best_phase": None,
             "worst_phase": None,
@@ -347,6 +534,10 @@ def generate_overall_report(report):
             "weakness": None,
             "focus": None
         }
+
+    overall_weakness = identify_overall_weakness(
+        report
+    )
 
     # -----------------------------------------
     # Best and worst phases
@@ -391,7 +582,17 @@ def generate_overall_report(report):
     # Weakness
     # -----------------------------------------
 
-    if worst_stats["blunders"] > 0:
+    if overall_weakness["type"]:
+
+        weakness = (
+            f"{overall_weakness['description']} "
+            f"This occurred {overall_weakness['count']} "
+            f"time"
+            f"{'s' if overall_weakness['count'] != 1 else ''} "
+            f"across the game."
+        )
+
+    elif worst_stats["blunders"] > 0:
 
         weakness = (
             f"Your {worst_phase.lower()} was your weakest phase. "
@@ -405,9 +606,7 @@ def generate_overall_report(report):
         weakness = (
             f"Your {worst_phase.lower()} was your weakest phase. "
             f"You made {worst_stats['mistakes']} mistake"
-            f"{'s' if worst_stats['mistakes'] != 1 else ''} "
-            f"and {worst_stats['inaccuracies']} inaccuracy"
-            f"{'ies' if worst_stats['inaccuracies'] != 1 else 'y'}."
+            f"{'s' if worst_stats['mistakes'] != 1 else ''}."
         )
 
     else:
@@ -421,7 +620,11 @@ def generate_overall_report(report):
     # Focus recommendation
     # -----------------------------------------
 
-    if worst_stats["blunders"] > 0:
+    if overall_weakness["focus"]:
+
+        focus = overall_weakness["focus"]
+
+    elif worst_stats["blunders"] > 0:
 
         focus = (
             "Focus on tactical awareness and checking your "
@@ -478,11 +681,14 @@ def generate_overall_report(report):
         "focus": focus
     }
 
+
 if __name__ == "__main__":
 
     report = generate_phase_report()
 
-    overall = generate_overall_report(report)
+    overall = generate_overall_report(
+        report
+    )
 
     final_report = {
         "phases": report,

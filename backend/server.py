@@ -110,17 +110,27 @@ def get_puzzles():
 @app.route("/analysis")
 def get_analysis():
 
-    if not os.path.exists(ANALYSIS_PATH):
+    try:
+
+        report = generate_phase_report()
+
+        overall = generate_overall_report(
+            report
+        )
+
         return jsonify({
-            "analysis": []
+            "phases": report,
+            "overall": overall
         })
 
-    with open(ANALYSIS_PATH, "r") as file:
-        analysis = json.load(file)
+    except Exception as e:
 
-    return jsonify({
-        "analysis": analysis
-    })
+        print("Analysis report error:", e)
+
+        return jsonify({
+            "message": "Error generating analysis report.",
+            "error": str(e)
+        }), 500
 
 @app.route("/import-chess-com", methods=["POST"])
 def import_chess_com():
