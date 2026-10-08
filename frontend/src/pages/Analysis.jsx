@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
+import CriticalMomentBoard from "../components/CriticalMomentBoard";
+
 
 export default function Analysis() {
   const [report, setReport] = useState(null);
   const [error, setError] = useState("");
+  const [trainingResults, setTrainingResults] = useState({});
+  const [trainingControls, setTrainingControls] = useState({});
 
   useEffect(() => {
     fetch("http://127.0.0.1:5000/analysis")
@@ -25,13 +29,7 @@ export default function Analysis() {
 
   if (error) {
     return (
-      <div
-        style={{
-          width: "800px",
-          margin: "40px auto",
-          textAlign: "center",
-        }}
-      >
+      <div style={{ width: "800px", margin: "40px auto", textAlign: "center" }}>
         <h1>Game Analysis</h1>
         <p>❌ {error}</p>
       </div>
@@ -40,13 +38,7 @@ export default function Analysis() {
 
   if (!report) {
     return (
-      <div
-        style={{
-          width: "800px",
-          margin: "40px auto",
-          textAlign: "center",
-        }}
-      >
+      <div style={{ width: "800px", margin: "40px auto", textAlign: "center" }}>
         <h1>Game Analysis</h1>
         <p>⏳ Loading analysis...</p>
       </div>
@@ -64,14 +56,9 @@ export default function Analysis() {
         fontFamily: "Arial, sans-serif",
       }}
     >
-      <h1 style={{ textAlign: "center" }}>
-        Chess Analysis Report
-      </h1>
+      <h1 style={{ textAlign: "center" }}>Chess Analysis Report</h1>
 
-      {/* ============================== */}
-      {/* OVERALL PERFORMANCE */}
-      {/* ============================== */}
-
+      {/* Overall Performance */}
       <div
         style={{
           border: "1px solid #ccc",
@@ -107,217 +94,340 @@ export default function Analysis() {
         <p>{overall.focus || "N/A"}</p>
       </div>
 
-      {/* ============================== */}
-      {/* PHASE BREAKDOWN */}
-      {/* ============================== */}
-
-      <h2
-        style={{
-          marginTop: "40px",
-          textAlign: "center",
-        }}
-      >
+      {/* Phase Breakdown */}
+      <h2 style={{ marginTop: "40px", textAlign: "center" }}>
         Phase Breakdown
       </h2>
 
-      {Object.entries(phases).map(
-        ([phase, data]) => (
+      {Object.entries(phases).map(([phase, data]) => (
+        <div
+          key={phase}
+          style={{
+            border: "1px solid #ccc",
+            borderRadius: "10px",
+            padding: "25px",
+            marginTop: "20px",
+          }}
+        >
+          <h2>{phase}</h2>
+
+          <p>
+            <strong>Summary:</strong> {data.summary}
+          </p>
+
+          {/* Your Stats */}
           <div
-            key={phase}
             style={{
-              border: "1px solid #ccc",
-              borderRadius: "10px",
-              padding: "25px",
               marginTop: "20px",
+              padding: "15px",
+              backgroundColor: "#f5f5f5",
+              borderRadius: "8px",
             }}
           >
-            <h2>{phase}</h2>
+            <h3>You</h3>
 
             <p>
-              <strong>Summary:</strong>{" "}
-              {data.summary}
+              <strong>Performance:</strong>{" "}
+              {data.you.performance}
             </p>
 
-            {/* ============================== */}
-            {/* YOU */}
-            {/* ============================== */}
+            <p>
+              <strong>Moves:</strong> {data.you.moves}
+            </p>
 
-            <div
-              style={{
-                marginTop: "20px",
-                padding: "15px",
-                backgroundColor: "#f5f5f5",
-                borderRadius: "8px",
-              }}
-            >
-              <h3>You</h3>
+            <p>
+              <strong>Blunders:</strong> {data.you.blunders}
+            </p>
 
-              <p>
-                <strong>Performance:</strong>{" "}
-                {data.you.performance}
-              </p>
+            <p>
+              <strong>Mistakes:</strong> {data.you.mistakes}
+            </p>
 
-              <p>
-                <strong>Moves:</strong>{" "}
-                {data.you.moves}
-              </p>
+            <p>
+              <strong>Inaccuracies:</strong>{" "}
+              {data.you.inaccuracies}
+            </p>
 
-              <p>
-                <strong>Blunders:</strong>{" "}
-                {data.you.blunders}
-              </p>
+            <p>
+              <strong>Average Loss:</strong>{" "}
+              {data.you.average_loss}
+            </p>
 
-              <p>
-                <strong>Mistakes:</strong>{" "}
-                {data.you.mistakes}
-              </p>
-
-              <p>
-                <strong>Inaccuracies:</strong>{" "}
-                {data.you.inaccuracies}
-              </p>
-
-              <p>
-                <strong>Average Loss:</strong>{" "}
-                {data.you.average_loss}
-              </p>
-
-              <p>
-                <strong>Largest Loss:</strong>{" "}
-                {data.you.largest_loss}
-              </p>
-            </div>
-
-            {/* ============================== */}
-            {/* OPPONENT */}
-            {/* ============================== */}
-
-            <div
-              style={{
-                marginTop: "15px",
-                padding: "15px",
-                backgroundColor: "#f5f5f5",
-                borderRadius: "8px",
-              }}
-            >
-              <h3>Opponent</h3>
-
-              <p>
-                <strong>Performance:</strong>{" "}
-                {data.opponent.performance}
-              </p>
-
-              <p>
-                <strong>Moves:</strong>{" "}
-                {data.opponent.moves}
-              </p>
-
-              <p>
-                <strong>Blunders:</strong>{" "}
-                {data.opponent.blunders}
-              </p>
-
-              <p>
-                <strong>Mistakes:</strong>{" "}
-                {data.opponent.mistakes}
-              </p>
-
-              <p>
-                <strong>Inaccuracies:</strong>{" "}
-                {data.opponent.inaccuracies}
-              </p>
-
-              <p>
-                <strong>Average Loss:</strong>{" "}
-                {data.opponent.average_loss}
-              </p>
-
-              <p>
-                <strong>Largest Loss:</strong>{" "}
-                {data.opponent.largest_loss}
-              </p>
-            </div>
-
-            {/* ============================== */}
-            {/* YOUR RECURRING PATTERNS */}
-            {/* ============================== */}
-
-            <div style={{ marginTop: "20px" }}>
-              <h3>Your Recurring Patterns</h3>
-
-              {data.you.patterns &&
-              data.you.patterns.length > 0 ? (
-                <ul>
-                  {data.you.patterns.map(
-                    (pattern, index) => (
-                      <li key={index}>
-                        <strong>
-                          {pattern.type ||
-                            pattern.reason}
-                        </strong>
-
-                        {" × "}
-                        {pattern.count}
-
-                        {pattern.description && (
-                          <>
-                            {" - "}
-                            {pattern.description}
-                          </>
-                        )}
-                      </li>
-                    )
-                  )}
-                </ul>
-              ) : (
-                <p>
-                  No significant recurring patterns
-                  detected.
-                </p>
-              )}
-            </div>
-
-            {/* ============================== */}
-            {/* OPPONENT PATTERNS */}
-            {/* ============================== */}
-
-            <div style={{ marginTop: "20px" }}>
-              <h3>Opponent Recurring Patterns</h3>
-
-              {data.opponent.patterns &&
-              data.opponent.patterns.length > 0 ? (
-                <ul>
-                  {data.opponent.patterns.map(
-                    (pattern, index) => (
-                      <li key={index}>
-                        <strong>
-                          {pattern.type ||
-                            pattern.reason}
-                        </strong>
-
-                        {" × "}
-                        {pattern.count}
-
-                        {pattern.description && (
-                          <>
-                            {" - "}
-                            {pattern.description}
-                          </>
-                        )}
-                      </li>
-                    )
-                  )}
-                </ul>
-              ) : (
-                <p>
-                  No significant recurring patterns
-                  detected.
-                </p>
-              )}
-            </div>
+            <p>
+              <strong>Largest Loss:</strong>{" "}
+              {data.you.largest_loss}
+            </p>
           </div>
-        )
-      )}
+
+          {/* Opponent Stats */}
+          <div
+            style={{
+              marginTop: "15px",
+              padding: "15px",
+              backgroundColor: "#f5f5f5",
+              borderRadius: "8px",
+            }}
+          >
+            <h3>Opponent</h3>
+
+            <p>
+              <strong>Performance:</strong>{" "}
+              {data.opponent.performance}
+            </p>
+
+            <p>
+              <strong>Moves:</strong> {data.opponent.moves}
+            </p>
+
+            <p>
+              <strong>Blunders:</strong> {data.opponent.blunders}
+            </p>
+
+            <p>
+              <strong>Mistakes:</strong> {data.opponent.mistakes}
+            </p>
+
+            <p>
+              <strong>Inaccuracies:</strong>{" "}
+              {data.opponent.inaccuracies}
+            </p>
+
+            <p>
+              <strong>Average Loss:</strong>{" "}
+              {data.opponent.average_loss}
+            </p>
+
+            <p>
+              <strong>Largest Loss:</strong>{" "}
+              {data.opponent.largest_loss}
+            </p>
+          </div>
+
+          {/* Your Recurring Patterns */}
+          <div style={{ marginTop: "20px" }}>
+            <h3>Your Recurring Patterns</h3>
+
+            {data.you.patterns && data.you.patterns.length > 0 ? (
+              <ul>
+                {data.you.patterns.map((pattern, index) => (
+                  <li key={index}>
+                    <strong>
+                      {pattern.type || pattern.reason}
+                    </strong>
+
+                    {" × "}
+
+                    {pattern.count}
+
+                    {pattern.description && (
+                      <>
+                        {" - "}
+                        {pattern.description}
+                      </>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p>No significant recurring patterns detected.</p>
+            )}
+          </div>
+
+          {/* Opponent Recurring Patterns */}
+          <div style={{ marginTop: "20px" }}>
+            <h3>Opponent Recurring Patterns</h3>
+
+            {data.opponent.patterns &&
+            data.opponent.patterns.length > 0 ? (
+              <ul>
+                {data.opponent.patterns.map((pattern, index) => (
+                  <li key={index}>
+                    <strong>
+                      {pattern.type || pattern.reason}
+                    </strong>
+
+                    {" × "}
+
+                    {pattern.count}
+
+                    {pattern.description && (
+                      <>
+                        {" - "}
+                        {pattern.description}
+                      </>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p>No significant recurring patterns detected.</p>
+            )}
+          </div>
+
+          {/* Critical Moments */}
+          <div style={{ marginTop: "30px" }}>
+            <h3>🎯 Critical Moments</h3>
+
+            {data.critical_moments &&
+            data.critical_moments.length > 0 ? (
+              data.critical_moments.map((moment, index) => {
+                const trainingKey = `${phase}-${index}`;
+                const controls = trainingControls[trainingKey] || {};
+                const result = trainingResults[trainingKey];
+
+                return (
+                  <div
+                    key={index}
+                    style={{
+                      border: "1px solid #ddd",
+                      borderRadius: "8px",
+                      padding: "15px",
+                      marginTop: "12px",
+                    }}
+                  >
+                    <h4>
+                      Move {moment.move_number}: {moment.move}
+                    </h4>
+
+                    <CriticalMomentBoard
+                      fen={moment.fen}
+                      playerColor={
+                        moment.fen.split(" ")[1] === "b"
+                          ? "black"
+                          : "white"
+                      }
+                      resetKey={controls.resetKey || 0}
+                      showBestMove={controls.showBestMove || false}
+                      bestMove={moment.best_line?.[0]}
+                      onMove={(userMove) => {
+                        const bestMove = moment.best_line?.[0];
+
+                        setTrainingResults((previous) => ({
+                          ...previous,
+                          [trainingKey]: {
+                            correct: userMove.uci === bestMove,
+                            userMove: userMove.san,
+                            bestMove: moment.best_move,
+                          },
+                        }));
+                      }}
+                    />
+
+                    {result && (
+                      <div
+                        style={{
+                          marginTop: "15px",
+                          padding: "15px",
+                          borderRadius: "8px",
+                          backgroundColor: result.correct
+                            ? "#e8f5e9"
+                            : "#ffebee",
+                        }}
+                      >
+                        {result.correct ? (
+                          <>
+                            <strong>✅ Correct!</strong>
+                            <p>
+                              You found the engine's best move.
+                            </p>
+                          </>
+                        ) : (
+                          <>
+                            <strong>❌ Not quite.</strong>
+
+                            <p>
+                              <strong>Your move:</strong>{" "}
+                              {result.userMove}
+                            </p>
+
+                            <p>
+                              <strong>Best move:</strong>{" "}
+                              {result.bestMove}
+                            </p>
+
+                            <p>
+                              <strong>Why:</strong>{" "}
+                              {moment.reason}
+                            </p>
+                          </>
+                        )}
+                      </div>
+                    )}
+
+                    <div
+                      style={{
+                        display: "flex",
+                        gap: "10px",
+                        justifyContent: "center",
+                        marginTop: "15px",
+                      }}
+                    >
+                      <button
+                        onClick={() => {
+                          setTrainingResults((previous) => {
+                            const updated = { ...previous };
+                            delete updated[trainingKey];
+                            return updated;
+                          });
+
+                          setTrainingControls((previous) => ({
+                            ...previous,
+                            [trainingKey]: {
+                              resetKey:
+                                (previous[trainingKey]?.resetKey || 0) + 1,
+                              showBestMove: false,
+                            },
+                          }));
+                        }}
+                      >
+                        🔄 Try Again
+                      </button>
+
+                      <button
+                        onClick={() => {
+                          setTrainingControls((previous) => ({
+                            ...previous,
+                            [trainingKey]: {
+                              ...previous[trainingKey],
+                              showBestMove: true,
+                            },
+                          }));
+                        }}
+                      >
+                        💡 Show Best Move
+                      </button>
+                    </div>
+
+                    <p>
+                      <strong>Best Move:</strong>{" "}
+                      {moment.best_move}
+                    </p>
+
+                    <p>
+                      <strong>Evaluation Loss:</strong>{" "}
+                      {moment.loss}
+                    </p>
+
+                    <p>
+                      <strong>Category:</strong>{" "}
+                      {moment.category}
+                    </p>
+
+                    <p>
+                      <strong>Reason:</strong>{" "}
+                      {moment.reason}
+                    </p>
+                  </div>
+                );
+              })
+            ) : (
+              <p>
+                No critical moments detected in this phase.
+              </p>
+            )}
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

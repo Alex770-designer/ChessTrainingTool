@@ -338,6 +338,29 @@ def generate_phase_report():
             opponent_moves
         )
 
+        critical_moments = [
+            {
+                "move_number": move["move_number"],
+                "move": move["move"],
+                "best_move": move["best_move"],
+                "best_line": move.get("best_line", []),
+                "before_evaluation": move["before_evaluation"],
+                "after_evaluation": move["after_evaluation"],
+                "loss": move["loss"],
+                "category": move["category"],
+                "reason": move.get("reason", ""),
+                "reason_type": move.get("reason_type"),
+                "fen": move["fen"]
+            }
+            for move in your_moves
+            if move.get("category") != "GOOD"
+        ]
+
+        critical_moments.sort(
+            key=lambda move: move["loss"],
+            reverse=True
+        )
+
         report[phase] = {
 
             "you": {
@@ -364,7 +387,9 @@ def generate_phase_report():
                 },
 
                 phase
-            )
+            ),
+
+            "critical_moments": critical_moments
         }
 
     return report
